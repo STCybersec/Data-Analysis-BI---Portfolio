@@ -1,54 +1,83 @@
-# 📊 Data Analysis & Business Intelligence Portfolio
+# 📊 Enterprise Data Architecture & Business Intelligence Portfolio
 
-Welcome! I'm **Sanele Siyabonga Thusi**, a **Data Analyst & Business Intelligence Specialist** focused on building **enterprise-grade analytics platforms, executive dashboards, and operational intelligence systems** across multiple industries.
+Welcome.
+I'm Sanele Siyabonga Thusi, a Business Intelligence Engineer & Enterprise Data Modeler specializing in building structured, scalable analytics platforms that transform operational systems into executive decision frameworks.
 
-My work emphasizes **real-world business modeling, scalable data architecture, KPI engineering, forecasting, and decision intelligence**.
+My work focuses on dimensional modeling, fact/dimension engineering, KPI architecture, forecasting systems, and enterprise-grade intelligence platforms across logistics, public sector, healthcare, and financial services industries.
 
----
+## 🧠 Core Expertise
 
-## 🧠 Core Competencies
+- Enterprise Data Warehouse Design (Star Schema Architecture)
+- Fact & Dimension Modeling
+- Grain Definition & Analytical Integrity
+- Advanced SQL & Window Functions
+- KPI Engineering & Performance Frameworks
+- Executive Intelligence Systems (Power BI)
+- Operational & Financial Analytics
+- Forecasting & Trend Modeling
+- Data Governance & Modeling Standards
 
-- Enterprise Data Modeling  
-- Advanced SQL Analytics  
-- Business Intelligence Engineering (Power BI)  
-- Executive Dashboard Design  
-- KPI & Performance Systems  
-- Forecasting & Trend Analysis  
-- Operational Intelligence Platforms  
+## 🏗️ Enterprise-Grade Systems
 
----
+### 🏭 Enterprise Logistics & Operations Intelligence Platform (Flagship System)
 
-## 🏗️ Enterprise-Grade Projects
+**Sector:** Logistics, Supply Chain, Warehousing, Distribution
 
-### 🏭 Enterprise Logistics & Operations Intelligence Platform *(Flagship Project)*
+#### Overview
+Designed and engineered a multi-domain enterprise data warehouse integrating logistics operations, warehouse management, order processing, inventory control, workforce productivity, and financial performance into a unified analytical ecosystem. The platform was modeled using star schema architecture with clearly defined fact grains and conformed dimensions.
 
-**Sector:** Logistics, Supply Chain, Warehousing, Distribution  
+#### 🏛️ Data Architecture Design
 
-**Overview:**  
-Designed a **full-scale enterprise business intelligence platform** covering logistics, warehousing, sales operations, product movement, finance, and workforce analytics.
+**Fact Tables**
 
-**Core Systems Modeled:**
-- Warehouse Management System (WMS)
-- Logistics & Fleet Operations
-- Sales & Order Processing
-- Product Inventory Management
-- Workforce Analytics (HR)
-- Financial Performance Monitoring
+- **FactOrders**
+    - **Grain:** One row per order transaction
+    - **Metrics:** Order value, quantity, margin, discount, fulfillment status
+- **FactShipments**
+    - **Grain:** One row per dispatch event
+    - **Metrics:** Dispatch timestamp, delivery duration, delay interval, route cost
+- **FactInventoryMovement**
+    - **Grain:** One row per inventory movement event
+    - **Metrics:** Quantity in/out, transfer volume, movement type
+- **FactInventorySnapshot**
+    - **Grain:** One row per product per warehouse per day
+    - **Metrics:** Stock on hand, inventory valuation, aging category
+- **FactWorkforceActivity**
+    - **Grain:** One row per shift/activity
+    - **Metrics:** Hours worked, productivity index, allocation
+- **FactFinancialTransactions**
+    - **Grain:** One row per financial posting
+    - **Metrics:** Revenue, cost allocation, margin contribution
 
-**Dashboards & Analytics:**
-- Executive Command Dashboard (CEO View)
-- Logistics Control Tower
-- Warehouse Performance & Stock Flow
-- Sales Performance Intelligence
-- Product Demand & Turnover Analytics
-- Workforce Productivity & Utilization
-- Financial Health & Margin Analysis
+**Conformed Dimensions**
 
-**Business Impact:**
-- Optimized inbound & outbound logistics flows  
-- Improved stock turnover forecasting  
-- Reduced delivery inefficiencies  
-- Enabled executive-level strategic planning  
+- DimDate
+- DimProduct
+- DimClient
+- DimWarehouse
+- DimRoute
+- DimFleet
+- DimEmployee
+- DimRegion
+- DimServiceLevel
+
+#### 📊 Executive Intelligence Systems
+
+- Executive Command Dashboard (C-Suite Overview)
+- Logistics Control Tower (Fleet & Route Optimization)
+- Warehouse Performance & Stock Flow Monitoring
+- Sales & Margin Intelligence
+- Product Demand & Turnover Modeling
+- Workforce Productivity Analytics
+- Financial Health & Cost Allocation Dashboard
+
+#### 📈 Business Impact
+
+- Improved route efficiency through dispatch interval analysis
+- Enhanced inventory turnover forecasting
+- Reduced stock aging & overstock risk
+- Increased workforce allocation visibility
+- Integrated financial and operational KPIs into unified executive reporting
 
 [View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio)
 
