@@ -50,7 +50,7 @@ Designed a **full-scale enterprise business intelligence platform** covering log
 - Reduced delivery inefficiencies  
 - Enabled executive-level strategic planning  
 
-[View Project →](#)
+[View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio)
 
 ---
 
