@@ -10,7 +10,7 @@
 
 A full end-to-end sales analytics project built on a star schema data warehouse containing **500,000 transactions** across 5,000 customers, 50 products, 6 regions, and 5 years of sales history (2021–2025).
 
-The goal was to answer key business questions about revenue performance, product demand, regional contribution, and customer spend — and visualise the findings in an executive Power BI dashboard.
+The goal was to answer key business questions about revenue performance, product demand, regional contribution, and customer spend - and visualise the findings in an executive Power BI dashboard.
 
 ---
 
