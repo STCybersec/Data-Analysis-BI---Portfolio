@@ -19,7 +19,7 @@ The goal was to answer key business questions about revenue performance, product
 | Table | Rows | Description |
 |-------|------|-------------|
 | fact_sales | 500,000 | Order transactions |
-| dim_customers | 5,000 | Customer demographics — SA, USA, UK |
+| dim_customers | 5,000 | Customer demographics - SA, USA, UK |
 | dim_products | 50 | Products across 7 categories |
 | dim_regions | 6 | Sales regions with managers |
 | dim_dates | 1,826 | Full date dimension 2021–2025 |
