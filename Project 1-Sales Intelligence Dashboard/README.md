@@ -1,4 +1,4 @@
-# 📊 Project 1 — Sales Intelligence Dashboard
+# 📊 Project 1 - Sales Intelligence Dashboard
 
 **Industry:** Retail
 **Tools:** SQL Server · Power BI · Star Schema Modeling
