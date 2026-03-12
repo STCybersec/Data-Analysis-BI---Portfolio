@@ -1,0 +1,50 @@
+﻿1,Laptop,Electronics,Computers,1200.00
+2,Desktop,Electronics,Computers,1500.00
+3,Smartphone,Electronics,Mobile,800.00
+4,Tablet,Electronics,Mobile,600.00
+5,Smartwatch,Electronics,Wearables,300.00
+6,Headphones,Electronics,Accessories,150.00
+7,Keyboard,Electronics,Accessories,80.00
+8,Mouse,Electronics,Accessories,40.00
+9,Monitor,Electronics,Computers,450.00
+10,Webcam,Electronics,Accessories,120.00
+11,Running Shoes,Sports,Footwear,110.00
+12,Yoga Mat,Sports,Fitness,35.00
+13,Dumbbell Set,Sports,Fitness,90.00
+14,Cycling Helmet,Sports,Cycling,65.00
+15,Tennis Racket,Sports,Racket Sports,85.00
+16,Football,Sports,Ball Sports,25.00
+17,Basketball,Sports,Ball Sports,30.00
+18,Swimming Goggles,Sports,Swimming,20.00
+19,Protein Powder,Health,Supplements,50.00
+20,Resistance Bands,Sports,Fitness,18.00
+21,Sofa,Furniture,Living Room,800.00
+22,Dining Table,Furniture,Dining Room,650.00
+23,Office Chair,Furniture,Office,250.00
+24,Bookshelf,Furniture,Storage,180.00
+25,Bed Frame,Furniture,Bedroom,500.00
+26,Wardrobe,Furniture,Bedroom,700.00
+27,Coffee Table,Furniture,Living Room,200.00
+28,TV Stand,Furniture,Living Room,150.00
+29,Blender,Appliances,Kitchen,75.00
+30,Microwave,Appliances,Kitchen,120.00
+31,Air Fryer,Appliances,Kitchen,95.00
+32,Coffee Maker,Appliances,Kitchen,60.00
+33,Vacuum Cleaner,Appliances,Cleaning,130.00
+34,Iron,Appliances,Laundry,45.00
+35,Toaster,Appliances,Kitchen,30.00
+36,Novel - Fiction,Books,Fiction,15.00
+37,Self-Help Book,Books,Non-Fiction,18.00
+38,Cookbook,Books,Non-Fiction,25.00
+39,Children Book,Books,Children,12.00
+40,Science Textbook,Books,Education,55.00
+41,T-Shirt,Clothing,Tops,20.00
+42,Jeans,Clothing,Bottoms,55.00
+43,Dress,Clothing,Women,70.00
+44,Jacket,Clothing,Outerwear,120.00
+45,Sneakers,Clothing,Footwear,90.00
+46,Sunscreen SPF50,Health,Skincare,22.00
+47,Vitamin C Supplements,Health,Supplements,15.00
+48,Face Moisturizer,Health,Skincare,35.00
+49,Shampoo,Health,Hair Care,12.00
+50,Electric Toothbrush,Health,Oral Care,60.00
