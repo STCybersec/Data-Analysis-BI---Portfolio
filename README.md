@@ -1,17 +1,17 @@
 # 📊 Data Analytics & Business Intelligence Portfolio
 
-Hi, I'm **Sanele Siyabonga Thusi** — a Data Analyst & BI Developer based in South Africa.
+Hi, I'm **Sanele Siyabonga Thusi** - a Data Analyst & BI Developer based in South Africa.
 
 I build end-to-end analytics solutions: from data modeling and SQL analysis to Power BI dashboards that turn raw data into clear business decisions.
 
-This portfolio contains **6 real-world projects** spanning retail, healthcare, government, fintech, logistics, and e-commerce — each demonstrating SQL, dimensional modeling, and Power BI dashboard development.
+This portfolio contains **6 real-world projects** spanning retail, healthcare, government, fintech, logistics, and e-commerce - each demonstrating SQL, dimensional modeling, and Power BI dashboard development.
 
 ---
 
 ## 🧠 Core Skills
 
 **Data Analysis**
-- SQL — Joins, Aggregations, Window Functions, CTEs
+- SQL - Joins, Aggregations, Window Functions, CTEs
 - Data Cleaning & Transformation
 - KPI Design & Business Metrics
 
@@ -42,7 +42,7 @@ This portfolio contains **6 real-world projects** spanning retail, healthcare, g
 
 **Industry:** Retail | **Status:** ✅ Complete
 
-A full end-to-end sales analytics project built on a star schema data warehouse with 500,000 transactions across 5 years (2021–2025).
+A full end-to-end sales analytics project built on a star schema data warehouse with 500,000 transactions across 5 years (2021-2025).
 
 **Business Questions Answered:**
 - What is total revenue and how has it trended over time?
@@ -54,19 +54,19 @@ A full end-to-end sales analytics project built on a star schema data warehouse 
 - 💰 Total Revenue: R571,370,401.85
 - 📦 Total Orders: 500,000
 - 🛒 Items Sold: 2,749,608
-- 🏆 Top Category: Electronics (R287M — 50% of revenue)
+- 🏆 Top Category: Electronics (R287M - 50% of revenue)
 - 🌍 Top Region: International (R96.1M)
 
 **Skills Demonstrated:**
 - Star schema design (fact + 4 dimension tables)
-- SQL — aggregations, multi-table joins, CTEs, window functions, LAG(), RANK()
+- SQL - aggregations, multi-table joins, CTEs, window functions, LAG(), RANK()
 - Power BI dashboard with KPI cards, trend charts, regional maps
 
 [📂 View Project →](./Project1-Sales-Intelligence/)
 
 ---
 
-## Project 2 — Customer Retention Analytics
+## Project 2 - Customer Retention Analytics
 
 **Industry:** E-Commerce | **Status:** 🔄 In Progress
 
@@ -82,7 +82,7 @@ Analysing customer behaviour to understand retention, repeat purchases, and life
 
 ---
 
-## Project 3 — Healthcare Operations Dashboard
+## Project 3 - Healthcare Operations Dashboard
 
 **Industry:** Healthcare | **Status:** 🔄 In Progress
 
@@ -98,7 +98,7 @@ Hospital operations analytics focused on patient flow, bed occupancy, and depart
 
 ---
 
-## Project 4 — Government Service Delivery Analytics
+## Project 4 - Government Service Delivery Analytics
 
 **Industry:** Public Sector | **Status:** 🔄 In Progress
 
@@ -113,7 +113,7 @@ Tracking government service requests, resolution times, and departmental perform
 
 ---
 
-## Project 5 — Supply Chain Control Tower
+## Project 5 - Supply Chain Control Tower
 
 **Industry:** Logistics | **Status:** 🔄 In Progress
 
@@ -128,7 +128,7 @@ End-to-end supply chain analytics tracking shipments, warehouse efficiency, and 
 
 ---
 
-## Project 6 — Fintech Revenue Analytics
+## Project 6 - Fintech Revenue Analytics
 
 **Industry:** Financial Services | **Status:** 🔄 In Progress
 
@@ -145,11 +145,15 @@ Transaction and revenue analytics for a payments platform including merchant per
 
 ## 🎓 Education & Certifications
 
-- BCom Information Technology Management — Mancosa *(2026–2029)*
-- Data Analytics Essentials — Cisco
-- Python Essentials 1 — Cisco
-- Introduction to Data Science — Cisco
-- Cybersecurity SLP — University of Johannesburg
+- BCom Information Technology Management - Mancosa *(2026-2029)*
+- Cybersecurity SLP - University of Johannesburg
+- Intelligent Systems Development (Tensorflow) - University of Johannesburg
+- AI Fluency: Frameworks and Foundations - Anthropic
+- Introduction to agent skills -Anthropic
+- Data Analytics Essentials - Cisco
+- Python Essentials 1 - Cisco
+- Introduction to Data Science - Cisco
+
 
 ---
 
