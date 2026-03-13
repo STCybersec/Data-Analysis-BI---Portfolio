@@ -11,7 +11,7 @@
 
 
 -- ============================================================
--- SECTION 1:
+-- SECTION 1: BASIC ANALYSIS
 -- Skills: SELECT, SUM, COUNT, GROUP BY, DISTINCT
 -- ============================================================
 
@@ -60,7 +60,7 @@ ORDER BY Number_of_Customers DESC;
 
 
 -- ============================================================
--- SECTION 2:
+-- SECTION 2: INTERMEDIATE ANALYSIS
 -- Skills: JOINs, GROUP BY, HAVING, DATE Functions, RANK()
 -- ============================================================
 
@@ -173,7 +173,7 @@ ORDER BY Avg_Order_Value DESC;
 
 
 -- ============================================================
--- SECTION 3:
+-- SECTION 3: ADVANCED ANALYSIS
 -- Skills: Window Functions, LAG(), PARTITION BY, CTEs
 -- ============================================================
 
