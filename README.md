@@ -38,7 +38,7 @@ This portfolio contains **6 real-world projects** spanning retail, healthcare, g
 
 ---
 
-## Project 1 — Sales Intelligence Dashboard
+## Project 1 - Sales Intelligence Dashboard
 
 **Industry:** Retail | **Status:** ✅ Complete
 
@@ -60,9 +60,9 @@ A full end-to-end sales analytics project built on a star schema data warehouse 
 **Skills Demonstrated:**
 - Star schema design (fact + 4 dimension tables)
 - SQL - aggregations, multi-table joins, CTEs, window functions, LAG(), RANK()
-- Power BI dashboard with KPI cards, trend charts, regional maps
+- Power BI dashboard with KPI cards, trend charts, regional mappings
 
-[📂 View Project →](./Project1-Sales-Intelligence/)
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%201-Sales%20Intelligence%20Dashboard)
 
 ---
 
