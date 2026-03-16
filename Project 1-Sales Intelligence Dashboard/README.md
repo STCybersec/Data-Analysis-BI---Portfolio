@@ -56,14 +56,14 @@ Star schema — fact_sales at the centre, joined to 4 dimension tables via forei
 
 ## 📊 Power BI Dashboard
 
-> *Screenshot coming soon*
+> *<img width="1299" height="729" alt="Dashboard_SI_BI" src="https://github.com/user-attachments/assets/fb83a7b4-17f4-41cc-ab8c-b80531ad2676" />*
 
 **Dashboard includes:**
-- KPI Cards — Total Revenue, Total Orders, Items Sold, Avg Order Value
+- KPI Cards - Total Revenue, Total Orders, Items Sold, Avg Order Value
 - Monthly Revenue Trend (Line Chart)
 - Revenue by Category (Bar Chart)
 - Top 5 Products (Horizontal Bar)
-- Revenue by Region (Map / Bar)
+- Revenue by Region (Bar)
 - Top 10 Customers (Table)
 
 ---
