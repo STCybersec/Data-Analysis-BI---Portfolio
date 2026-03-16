@@ -29,12 +29,12 @@ This portfolio contains **6 real-world projects** spanning retail, healthcare, g
 
 | # | Project | Industry | Status |
 |---|---------|----------|--------|
-| 1 | [Sales Intelligence Dashboard](#project-1--sales-intelligence-dashboard) | Retail | ✅ Complete |
-| 2 | [Customer Retention Analytics](#project-2--customer-retention-analytics) | E-Commerce | 🔄 In Progress |
-| 3 | [Healthcare Operations Dashboard](#project-3--healthcare-operations-dashboard) | Healthcare | 🔄 In Progress |
-| 4 | [Government Service Delivery Analytics](#project-4--government-service-delivery-analytics) | Public Sector | 🔄 In Progress |
-| 5 | [Supply Chain Control Tower](#project-5--supply-chain-control-tower) | Logistics | 🔄 In Progress |
-| 6 | [Fintech Revenue Analytics](#project-6--fintech-revenue-analytics) | Financial Services | 🔄 In Progress |
+| 1 | [Sales Intelligence Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%201-Sales%20Intelligence%20Dashboard) | Retail | ✅ Complete |
+| 2 | [Customer Retention Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%202-Customer%20Retention) | E-Commerce | 🔄 In Progress |
+| 3 | [Healthcare Operations Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%203-Healthcare%20Operations) | Healthcare | 🔄 In Progress |
+| 4 | [Government Service Delivery Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%204-Government%20Service%20Delivery) | Public Sector | 🔄 In Progress |
+| 5 | [Supply Chain Control Tower](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%205-Supply%20Chain%20Control%20Tower) | Logistics | 🔄 In Progress |
+| 6 | [Fintech Revenue Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%206-Fintech%20Revenue%20Analytics) | Financial Services | 🔄 In Progress |
 
 ---
 
@@ -78,7 +78,7 @@ Analysing customer behaviour to understand retention, repeat purchases, and life
 - Who are our highest value customers?
 - What is customer lifetime value (CLV)?
 
-[📂 View Project →](./Project2-Customer-Retention/) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%202-Customer%20Retention) *(Coming Soon)*
 
 ---
 
@@ -94,7 +94,7 @@ Hospital operations analytics focused on patient flow, bed occupancy, and depart
 - Which departments are under most pressure?
 - What is bed occupancy rate?
 
-[📂 View Project →](./Project3-Healthcare-Operations/) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%203-Healthcare%20Operations) *(Coming Soon)*
 
 ---
 
@@ -109,7 +109,7 @@ Tracking government service requests, resolution times, and departmental perform
 - What is the average resolution time per department?
 - Which departments have the highest backlog?
 
-[📂 View Project →](./Project4-Government-Service-Delivery/) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%204-Government%20Service%20Delivery) *(Coming Soon)*
 
 ---
 
@@ -124,7 +124,7 @@ End-to-end supply chain analytics tracking shipments, warehouse efficiency, and 
 - Which warehouses process the most orders?
 - Where are delays happening?
 
-[📂 View Project →](./Project5-Supply-Chain-Control-Tower/) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%205-Supply%20Chain%20Control%20Tower) *(Coming Soon)*
 
 ---
 
@@ -139,7 +139,7 @@ Transaction and revenue analytics for a payments platform including merchant per
 - What is daily transaction volume?
 - Which merchants process the most payments?
 
-[📂 View Project →](./Project6-Fintech-Revenue-Analytics/) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%206-Fintech%20Revenue%20Analytics) *(Coming Soon)*
 
 ---
 
@@ -149,7 +149,7 @@ Transaction and revenue analytics for a payments platform including merchant per
 - Cybersecurity SLP - University of Johannesburg
 - Intelligent Systems Development (Tensorflow) - University of Johannesburg
 - AI Fluency: Frameworks and Foundations - Anthropic
-- Introduction to agent skills -Anthropic
+- Introduction to agent skills - Anthropic
 - Data Analytics Essentials - Cisco
 - Python Essentials 1 - Cisco
 - Introduction to Data Science - Cisco
