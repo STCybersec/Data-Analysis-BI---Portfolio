@@ -84,6 +84,7 @@ Project1-Sales-Intelligence/
 │   └── sales_dashboard.pbix
 ├── images/
 │   └── dashboard_preview.png
+|   └── model_view.png
 └── README.md
 ```
 
