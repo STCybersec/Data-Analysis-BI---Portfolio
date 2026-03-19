@@ -67,7 +67,7 @@ Star schema — fact_orders at the centre, joined to 4 dimension tables via fore
 
 ## 📊 Power BI Dashboard
 
-> *Screenshot coming soon*
+> *<img width="1337" height="858" alt="Screenshot 2026-03-19 034935" src="https://github.com/user-attachments/assets/8fe5c58e-dccc-4c9b-bb1f-01ca49e55070" />*
 
 **Dashboard includes:**
 - KPI Cards - Total Revenue, Total Orders, Total Customers, Return Rate
