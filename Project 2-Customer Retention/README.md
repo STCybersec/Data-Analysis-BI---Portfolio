@@ -22,7 +22,7 @@ The goal was to answer key business questions about customer retention, repeat p
 | dim_customers | 5,000 | Customer demographics with latitude & longitude |
 | dim_products | 40 | Products across 7 categories |
 | dim_payment | 7 | Payment methods |
-| dim_dates | 1,826 | Full date dimension 2021–2025 |
+| dim_dates | 1,826 | Full date dimension 2021-2025 |
 
 **Data generated using Python + SQL Server. No sensitive or real customer data used.**
 
