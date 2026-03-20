@@ -8,7 +8,7 @@
 
 ## 📌 Project Overview
 
-A customer behaviour analytics project built on a star schema data warehouse containing **500,000 orders** across **5,000 customers** in 5 countries - South Africa, USA, UK, Australia, and Canada - spanning 5 years (2021–2025).
+A customer behaviour analytics project built on a star schema data warehouse containing **500,000 orders** across **5,000 customers** in 5 countries - South Africa, USA, UK, Australia, and Canada - spanning 5 years (2021-2025).
 
 The goal was to answer key business questions about customer retention, repeat purchase behaviour, lifetime value, and acquisition trends - and visualise the findings in an interactive Power BI dashboard with map visuals.
 
