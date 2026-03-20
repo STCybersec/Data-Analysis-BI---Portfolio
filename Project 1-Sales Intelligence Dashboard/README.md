@@ -38,7 +38,7 @@ dim_regions   ──┤
 dim_dates     ──┘
 ```
 
-Star schema — fact_sales at the centre, joined to 4 dimension tables via foreign keys.
+Star schema - fact_sales at the centre, joined to 4 dimension tables via foreign keys.
 
 ---
 
@@ -48,9 +48,9 @@ Star schema — fact_sales at the centre, joined to 4 dimension tables via forei
 |---|---|
 | What drove the most revenue? | Electronics accounted for 50% of all sales |
 | Which region performs best? | International region led with R96M |
-| How is revenue trending? | Consistent YoY growth — 2025 strongest year |
+| How is revenue trending? | Consistent YoY growth - 2025 strongest year |
 | Who are our best customers? | Top 10 customers averaged R560K spend each |
-| What is seasonal pattern? | December spikes every year — holiday demand |
+| What is seasonal pattern? | December spikes every year - holiday demand |
 
 ---
 
@@ -95,8 +95,8 @@ Project1-Sales-Intelligence/
 - Electronics dominates revenue at **50.3%** of total sales
 - Revenue has grown **consistently year-on-year** from 2021 to 2025
 - The **International region** leads all 6 regions despite being the smallest by customer count
-- Top 10 customers contribute a disproportionate share — indicating high-value segment worth retaining
-- **December** consistently shows the highest monthly revenue — seasonal demand spike
+- Top 10 customers contribute a disproportionate share - indicating high-value segment worth retaining
+- **December** consistently shows the highest monthly revenue - seasonal demand spike
 
 ---
 
