@@ -58,7 +58,7 @@ Star schema — fact_orders at the centre, joined to 4 dimension tables via fore
 | Which payment method is most popular? | Credit Card and PayPal dominate across all 5 countries |
 | Which customer segment drives the most value? | Champion and High Value segments drive the majority of CLV |
 | Where are our customers located? | Geographic concentration in Johannesburg, London, and New York |
-| How is customer acquisition trending? | Seasonal peaks in Q4 each year — November and December highest |
+| How is customer acquisition trending? | Seasonal peaks in Q4 each year - November and December highest |
 | What is the return rate? | Approximately 5% of orders are returned across all categories |
 | Who are our highest value customers? | Top 10 customers show significantly above-average lifetime spend |
 | Which category do repeat buyers prefer? | Electronics dominates repeat purchase behaviour |
@@ -104,12 +104,12 @@ Project2-Customer-Retention/
 ---
 
 ## 💡 Key Insights
-
-- Customer map reveals **geographic concentration** in Johannesburg, London, and New York
-- **Repeat buyers** contribute significantly more revenue than one-time buyers
-- **Champion and High Value segments** drive the majority of CLV
-- Credit Card and PayPal dominate payment preferences
-- New customer acquisition shows **seasonal peaks** in Q4 each year
+- Total Revenue: R340.72M across 498K orders
+- Credit Card is the #1 payment method by revenue
+- Occasional and At Risk segments generate the most revenue
+- Revenue grew ▲3.13% vs Last Month and ▲25.30% vs Last Year
+- 5K customers spread across SA, USA, UK, Australia and Canada
+- Return rate remains low at 4.99% - healthy for e-commerce
 
 ---
 
