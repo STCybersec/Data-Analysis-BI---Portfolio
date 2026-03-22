@@ -71,7 +71,6 @@ Star schema — fact_orders at the centre, joined to 4 dimension tables via fore
 
 **Dashboard includes:**
 - KPI Cards - Total Revenue, Total Orders, Total Customers, Return Rate
-- New vs Repeat Buyers (Donut Chart)
 - Customer Acquisition Trend (Line Chart)
 - Revenue by Segment (Bar Chart)
 - Revenue by Payment Method (Bar Chart)
