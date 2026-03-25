@@ -8,7 +8,7 @@
 
 ## 📌 Executive Summary
 
-A retail business with 5 years of transaction history needed clarity on what was driving revenue, which customers and products mattered most, and where regional growth opportunities existed. This project delivered a fully interactive Power BI dashboard built on a star schema data warehouse — giving leadership a single source of truth for sales performance across **500,000 transactions** spanning 5,000 customers, 50 products, and 6 regions.
+A retail business with 5 years of transaction history needed clarity on what was driving revenue, which customers and products mattered most, and where regional growth opportunities existed. This project delivered a fully interactive Power BI dashboard built on a star schema data warehouse - giving leadership a single source of truth for sales performance across **500,000 transactions** spanning 5,000 customers, 50 products, and 6 regions.
 
 ---
 
