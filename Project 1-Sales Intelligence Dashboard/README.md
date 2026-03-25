@@ -44,7 +44,7 @@ Synthetic dataset generated using Python and loaded into SQL Server, simulating 
 Wrote analytical queries using aggregations, multi-table joins, CTEs, and window functions (`LAG`, `RANK`) to answer core business questions and surface trends over time.
 
 **4. Dashboard Development**
-Built an executive Power BI dashboard with KPI cards, trend charts, category breakdowns, regional comparisons, and a top customer table — designed for non-technical stakeholders.
+Built an executive Power BI dashboard with KPI cards, trend charts, category breakdowns, regional comparisons, and a top customer table - designed for non-technical stakeholders.
 
 ---
 
@@ -57,8 +57,9 @@ dim_products  ──┤
 dim_regions   ──┤
 dim_dates     ──┘
 ```
+> *<img width="1418" height="723" alt="Model_View_SI_BI" src="https://github.com/user-attachments/assets/4da825eb-d556-472a-af8f-d7fc9569e6f4" />*
 
-Star schema — `fact_sales` at the centre, joined to 4 dimension tables via foreign keys.
+Star schema - `fact_sales` at the centre, joined to 4 dimension tables via foreign keys.
 
 ---
 
@@ -68,7 +69,7 @@ Star schema — `fact_sales` at the centre, joined to 4 dimension tables via for
 - SQL - aggregations, multi-table joins, CTEs, window functions, `LAG()`, `RANK()`
 - Python - synthetic data generation
 - Power BI - KPI cards, trend charts, regional maps, executive storytelling
-- Business insight translation — turning query results into actionable findings
+- Business insight translation - turning query results into actionable findings
 
 ---
 
@@ -91,7 +92,7 @@ Star schema — `fact_sales` at the centre, joined to 4 dimension tables via for
 > *<img width="1299" height="729" alt="Dashboard_SI_BI" src="https://github.com/user-attachments/assets/fb83a7b4-17f4-41cc-ab8c-b80531ad2676" />*
 
 **Dashboard includes:**
-- KPI Cards — Total Revenue, Total Orders, Items Sold, Avg Order Value
+- KPI Cards - Total Revenue, Total Orders, Items Sold, Avg Order Value
 - Monthly Revenue Trend (Line Chart)
 - Revenue by Category (Bar Chart)
 - Top 5 Products (Horizontal Bar)
@@ -116,13 +117,13 @@ Star schema — `fact_sales` at the centre, joined to 4 dimension tables via for
 ## 📋 Business Recommendations
 
 **1. Double down on Electronics**
-With 50% of revenue from one category, ensure stock levels, supplier relationships, and marketing budgets reflect this dependency. Diversification risk should also be assessed.
+With 50% of revenue from one category, there is a risk of customer concentration risk. Ensure stock levels, supplier relationships, and marketing budgets reflect this dependency. Diversification risk should also be assessed.
 
 **2. Invest in the International region**
 Leading revenue despite the smallest customer count signals high revenue-per-customer efficiency. This market warrants dedicated sales resources and expansion planning.
 
 **3. Build a VIP retention programme**
-The top 10 customers averaging ~R197K each represent disproportionate value. A targeted retention strategy — loyalty benefits, account management - would protect this revenue.
+The top 10 customers averaging ~R197K each represent disproportionate value. A targeted retention strategy - loyalty benefits, account management - would protect this revenue.
 
 **4. Prepare for December demand**
 Consistent holiday spikes should inform inventory pre-loading, staffing, and promotional planning at least 60 days in advance.
