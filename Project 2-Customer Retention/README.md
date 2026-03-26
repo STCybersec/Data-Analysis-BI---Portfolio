@@ -61,14 +61,6 @@ dim_dates     ──┘
 
 Star schema - `fact_orders` at the centre, joined to 4 dimension tables via foreign keys (One to many connections).
 
-**Key upgrades vs Project 1:**
-- Customers include **latitude & longitude** - enables map visuals in Power BI
-- Customers have a **segment** field (Champion, Loyal, At Risk, New, Dormant, High Value, Occasional)
-- Customers have a **join_date** - enables acquisition trend analysis
-- Orders include **is_return** flag - enables return rate analysis
-- Orders include **unit_price** - enables margin analysis
-- New **dim_payment** dimension - enables payment method analysis
-
 ---
 
 ## 🛠️ Skills Demonstrated
