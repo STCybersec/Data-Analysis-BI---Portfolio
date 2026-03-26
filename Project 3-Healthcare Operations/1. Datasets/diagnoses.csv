@@ -1,0 +1,20 @@
+﻿1,Hypertension,Chronic
+2,Type 2 Diabetes,Chronic
+3,Tuberculosis,Infectious
+4,HIV/AIDS,Infectious
+5,Pneumonia,Acute
+6,Malaria,Infectious
+7,Appendicitis,Emergency
+8,Bone Fracture,Trauma
+9,Stroke,Emergency
+10,Heart Disease,Chronic
+11,Asthma,Chronic
+12,Cancer,Chronic
+13,Gastroenteritis,Acute
+14,Depression,Mental Health
+15,Maternal Complications,Maternal
+16,COVID-19,Infectious
+17,Malnutrition,Chronic
+18,Kidney Disease,Chronic
+19,Road Accident Trauma,Trauma
+20,Schizophrenia,Mental Health

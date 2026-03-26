@@ -1,0 +1,15 @@
+﻿1,Emergency,Emergency,50,Public Hospital
+2,Cardiology,Cardiology,30,Private Hospital
+3,Pediatrics,Pediatrics,40,Public Hospital
+4,Orthopedics,Orthopedics,25,Private Hospital
+5,Maternity,Maternal Care,35,Public Hospital
+6,General Ward,General,60,Public Hospital
+7,ICU,Critical Care,20,Private Hospital
+8,Oncology,Oncology,25,Private Hospital
+9,Psychiatry,Mental Health,20,Public Hospital
+10,Outpatient Clinic,General,0,Clinic
+11,TB Ward,Infectious Disease,30,Public Hospital
+12,HIV/AIDS Clinic,Infectious Disease,0,Clinic
+13,Neurology,Neurology,20,Private Hospital
+14,Pulmonology,Respiratory,20,Public Hospital
+15,Trauma Unit,Emergency,30,Public Hospital
