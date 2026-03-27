@@ -37,16 +37,16 @@ Hospital leadership had access to raw admission records but no structured visibi
 ## 🏗️ Methodology
 
 **1. Data Modelling**
-Designed a star schema with `fact_admissions` at the centre, connected to 5 dimension tables. The model captures patient demographics including age groups and SA provinces, illness categories, department bed capacity, doctor workload, admission types, patient outcomes, readmission flags, and wait times.
+Designed a star schema with fact_admissions at the center, linking five dimension tables capturing patient demographics (age groups, SA provinces), illness categories, bed capacity, doctor workload, admission types, outcomes, readmissions, and wait times.
 
 **2. Data Generation & ETL Loading**
 Synthetic dataset generated using Python with realistic SA healthcare distributions.
 
 **3. SQL Analysis**
-Wrote analytical queries across 3 levels - Basic, Intermediate and Advanced - covering admission volumes, readmission rates, mortality rates, average length of stay, wait time analysis, bed occupancy, diagnosis patterns, age group breakdowns, and province-level mortality using aggregations, CTEs, window functions, DATEDIFF, CASE WHEN logic, and LAG() for trend analysis.
+Wrote SQL analyses across basic, intermediate, and advanced levels, covering admissions, readmissions, mortality, length of stay, wait times, bed occupancy, diagnoses, age groups, and provincial trends using aggregations, CTEs, window functions, DATEDIFF, CASE, and LAG().
 
 **4. Dashboard Development**
-Built an executive Power BI dashboard with a narrative-first design - leading with a cost impact headline, color-coded KPI benchmarks, province-level pressure analysis, illness category breakdown, age group facility demand, and a 5-year admission trend - designed to answer what happened, why it matters, and what leadership should do next.
+Built a narrative-first Power BI dashboard featuring a cost-impact headline, KPI benchmarks, province pressure analysis, illness breakdowns, age group demand, and a 5-year trend-clearly showing what happened, why it matters, and next actions for leadership.
 
 ---
 
@@ -128,10 +128,10 @@ Star schema - `fact_admissions` at the centre, joined to 5 dimension tables via 
 ## 📋 Business Recommendations
 
 **1. 🔴 Immediately address wait times - 12.26 hours is a patient safety risk**
-The average wait time of 12.26 hours is more than 50% above the 8-hour target and more than 3 times the WHO emergency care guideline of 4 hours. This is the single most urgent operational issue. I suggwst we fast track operation protocols with hospitals, additional intake staff during peak months, and a dedicated wait time reduction task team should be prioritised immediately. Every hour of excess wait time increases adverse outcome risk and patient dissatisfaction and health concerns.
+Average wait time is 12.26 hours-over 50% above the 8-hour target and 3× the WHO 4-hour guideline-making it the most urgent issue. Fast-track hospital protocols, add intake staff during peak periods, and deploy a wait-time reduction task team immediately, as delays increase risk and dissatisfaction.
 
 **2. ⚠️ Launch a Chronic Disease Post-Discharge Program to reduce readmissions**
-Chronic diseases are the #1 illness category and the primary driver of the 8.03% readmission rate - above the 6% target. Implementing a structured 7-day post-discharge follow-up program for chronic disease patients - particularly Middle Aged and Senior age groups - is the highest-leverage intervention available. Evidence from similar programs shows a 20-30% reduction in readmissions, which at current volumes would save approximately R22M annually and free up thousands of bed-days for new admissions.
+Chronic diseases are the leading illness category and drive the 8.03% readmission rate-above the 6% target. A structured 7-day post-discharge follow-up for middle-aged and senior patients is the highest-impact intervention, with potential to cut readmissions by 20-30%, saving R22M annually and freeing significant bed capacity.
 
 **3. ⚠️ Redirect resources to Gauteng and Western Cape**
 Gauteng (35%) and Western Cape (20%) absorb 55% of national admission volume. Resource allocation - staffing, equipment, and bed capacity - must be proportional to this demand. A province-weighted resource model should replace any current equal-distribution approach.
