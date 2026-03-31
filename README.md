@@ -4,7 +4,7 @@ Hi, I'm **Sanele Siyabonga Thusi** - a Data Analyst & BI Developer based in Sout
 
 I build end-to-end analytics solutions: from data modeling and SQL analysis to Power BI dashboards that turn raw data into clear business decisions.
 
-This portfolio contains **6 real-world projects** spanning retail, healthcare, government, fintech, logistics, and e-commerce — each demonstrating SQL, dimensional modeling, and Power BI dashboard development - plus a dedicated Python data cleaning section demonstrating the full data pipeline from raw to analysis-ready.
+This portfolio contains **6 real-world projects** spanning retail, healthcare, government, fintech, logistics, and e-commerce - each demonstrating SQL, dimensional modeling, and Power BI dashboard development - plus a dedicated Python data cleaning section demonstrating the full data pipeline from raw to analysis-ready.
 
 ---
 
@@ -79,6 +79,11 @@ Data-Analysis-BI---Portfolio/
 | # | Dataset | Linked Project | Status |
 |---|---------|----------------|--------|
 | 1 | [Sales Intelligence Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Sales_Intelligence_Dashboard) | Project 1 - Sales Intelligence Dashboard | 🔄 In Progress |
+| 2 | [Customer Retention Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Customer_Retention_Analytics) | Project 2 - Customer Retention Analytics | 🔄 In Progress |
+| 3 | [Healthcare Operations Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Healthcare_Operations_Dashboard) | Project 3 - Healthcare Operations Dashboard | 🔄 In Progress |
+| 4 | [Government Service Delivery Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Government_Service_Delivery_Analytics) | Project 4 - Government Service Delivery Analytics | 🔄 In Progress |
+| 5 | [Supply Chain Control Tower](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Supply_Chain_Control_Tower) | Project 5 - Supply Chain Control Tower | 🔄 In Progress |
+| 6 | [Fintech Revenue Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Fintech_Revenue_Analytics) | Project 6 - Fintech Revenue Analytics | 🔄 In Progress |
 
 **What this section demonstrates:**
 - Identifying and handling missing values
@@ -139,7 +144,7 @@ Customer behaviour analytics focused on segmentation, lifetime value, acquisitio
 - 💰 Total Revenue: R340.72M
 - 👥 Total Customers: 5,000 across SA, USA, UK, Australia & Canada
 - 🏆 Highest CLV Segment: High Value (R68,777.74)
-- ⚠️ At Risk Segment CLV: R68,755.72 — nearly matching top segment
+- ⚠️ At Risk Segment CLV: R68,755.72 - nearly matching top segment
 - 💳 Top Payment Method: Credit Card
 - 🔄 Return Rate: 4.99%
 
