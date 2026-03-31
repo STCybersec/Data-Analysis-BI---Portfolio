@@ -4,7 +4,7 @@ Hi, I'm **Sanele Siyabonga Thusi** - a Data Analyst & BI Developer based in Sout
 
 I build end-to-end analytics solutions: from data modeling and SQL analysis to Power BI dashboards that turn raw data into clear business decisions.
 
-This portfolio contains **6 real-world projects** spanning retail, healthcare, government, fintech, logistics, and e-commerce - each demonstrating SQL, dimensional modeling, and Power BI dashboard development.
+This portfolio contains **6 real-world projects** spanning retail, healthcare, government, fintech, logistics, and e-commerce — each demonstrating SQL, dimensional modeling, and Power BI dashboard development - plus a dedicated Python data cleaning section demonstrating the full data pipeline from raw to analysis-ready.
 
 ---
 
@@ -25,7 +25,43 @@ This portfolio contains **6 real-world projects** spanning retail, healthcare, g
 
 ---
 
-## 📁 Portfolio Projects
+## 📁 Repository Structure
+
+```
+Data-Analysis-BI---Portfolio/
+│
+├── Project 1-Sales Intelligence Dashboard/
+│   ├── dataset/
+│   ├── sql/
+│   ├── dashboard/
+│   ├── images/
+│   └── README.md
+│
+├── Project 2-Customer Retention/
+├── Project 3-Healthcare Operations/
+├── Project 4-Government Service Delivery/
+├── Project 5-Supply Chain Control Tower/
+├── Project 6-Fintech Revenue Analytics/
+│
+├── Python-Data-Cleaning/
+│   ├── Sales Intelligence Dashboard/
+│   │   ├── Raw_Data/
+│   │   │   └── Raw_Sales_Dirty.csv
+│   │   ├── Cleaned_data/
+│   │   │   └── Raw_Sales_Cleaned.csv
+│   │   ├── Notebooks/
+│   │   │   └── Sales_Data_Cleaning.ipynb
+│   │   ├── Scripts/
+│   │   │   └── Clean_Sales_Data.py
+│   │   └── README.md
+│   └── README.md
+│
+└── README.md
+```
+
+---
+
+## 📁 BI & Analytics Projects
 
 | # | Project | Industry | Status |
 |---|---------|----------|--------|
@@ -35,6 +71,26 @@ This portfolio contains **6 real-world projects** spanning retail, healthcare, g
 | 4 | [Government Service Delivery Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%204-Government%20Service%20Delivery) | Public Sector | 🔄 In Progress |
 | 5 | [Supply Chain Control Tower](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%205-Supply%20Chain%20Control%20Tower) | Logistics | 🔄 In Progress |
 | 6 | [Fintech Revenue Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%206-Fintech%20Revenue%20Analytics) | Financial Services | 🔄 In Progress |
+
+---
+
+## 🐍 Python - Data Cleaning
+
+| # | Dataset | Linked Project | Status |
+|---|---------|----------------|--------|
+| 1 | [Sales Intelligence Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Sales_Intelligence_Dashboard) | Project 1 - Sales Intelligence Dashboard | 🔄 In Progress |
+
+**What this section demonstrates:**
+- Identifying and handling missing values
+- Removing duplicate records
+- Fixing incorrect data types (dates, numerics)
+- Standardising inconsistent text formatting
+- Flagging and isolating outliers
+- Producing clean, analysis-ready datasets using Python & pandas
+
+> *The cleaned datasets in this section feed directly into the SQL Server data warehouse and Power BI dashboards in the BI projects above — demonstrating a full end-to-end data pipeline.*
+
+[📂 View Python Data Cleaning →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning)
 
 ---
 
@@ -60,6 +116,7 @@ A full end-to-end sales analytics project built on a star schema data warehouse 
 **Skills Demonstrated:**
 - Star schema design (fact + 4 dimension tables)
 - SQL - aggregations, multi-table joins, CTEs, window functions, LAG(), RANK()
+- Python - data cleaning pipeline (see Python-Data-Cleaning folder)
 - Power BI dashboard with KPI cards, trend charts, regional mappings
 
 [📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%201-Sales%20Intelligence%20Dashboard)
@@ -68,17 +125,30 @@ A full end-to-end sales analytics project built on a star schema data warehouse 
 
 ## Project 2 - Customer Retention Analytics
 
-**Industry:** E-Commerce | **Status:** 🔄 In Progress
+**Industry:** E-Commerce | **Status:** ✅ Complete
 
-Analysing customer behaviour to understand retention, repeat purchases, and lifetime value.
+Customer behaviour analytics focused on segmentation, lifetime value, acquisition trends, and return rate analysis across 5 countries.
 
-**Business Questions:**
-- How many new customers do we acquire each month?
-- What percentage of customers return?
-- Who are our highest value customers?
-- What is customer lifetime value (CLV)?
+**Business Questions Answered:**
+- Which customer segment drives the highest CLV?
+- Which payment method generates the most revenue?
+- How is customer acquisition trending over time?
+- What is the overall return rate?
 
-[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%202-Customer%20Retention) *(Coming Soon)*
+**Key Results:**
+- 💰 Total Revenue: R340.72M
+- 👥 Total Customers: 5,000 across SA, USA, UK, Australia & Canada
+- 🏆 Highest CLV Segment: High Value (R68,777.74)
+- ⚠️ At Risk Segment CLV: R68,755.72 — nearly matching top segment
+- 💳 Top Payment Method: Credit Card
+- 🔄 Return Rate: 4.99%
+
+**Skills Demonstrated:**
+- Star schema with customer segmentation & geolocation
+- SQL - CLV calculations, acquisition trends, return rate analysis
+- Power BI - map visuals, segment analysis, MoM & YoY growth tracking
+
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%202-Customer%20Retention)
 
 ---
 
@@ -88,13 +158,13 @@ Analysing customer behaviour to understand retention, repeat purchases, and life
 
 Hospital operations analytics focused on patient flow, bed occupancy, and department workload.
 
-**Business Questions:**
+**Business Questions Answered:**
 - What is daily patient admission volume?
 - What is average patient stay duration?
 - Which departments are under most pressure?
 - What is bed occupancy rate?
 
-[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%203-Healthcare%20Operations) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%203-Healthcare%20Operations)
 
 ---
 
@@ -147,13 +217,12 @@ Transaction and revenue analytics for a payments platform including merchant per
 
 - BCom Information Technology Management - Mancosa *(2026-2029)*
 - Cybersecurity SLP - University of Johannesburg
-- Intelligent Systems Development (Tensorflow) - University of Johannesburg
+- Intelligent Systems Development (TensorFlow) - University of Johannesburg
 - AI Fluency: Frameworks and Foundations - Anthropic
-- Introduction to agent skills - Anthropic
+- Introduction to Agent Skills - Anthropic
 - Data Analytics Essentials - Cisco
 - Python Essentials 1 - Cisco
 - Introduction to Data Science - Cisco
-
 
 ---
 
