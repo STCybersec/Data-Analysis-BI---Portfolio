@@ -127,7 +127,7 @@ Star schema - `fact_admissions` at the centre, joined to 5 dimension tables via 
 
 ## 📋 Business Recommendations
 
-**1. 🔴 Immediately address wait times - 12.26 hours is a patient safety risk**
+**1. 🔴 Immediately address wait times (12.26 hours)**
 50% above 8-hr target, 3× WHO guideline. Fast-track protocols, add peak intake staff, deploy task team immediately.
 
 **2. ⚠️ Launch a Chronic Disease Post-Discharge Program to reduce readmissions**
