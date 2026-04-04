@@ -35,16 +35,16 @@ The business had transaction data but no visibility into customer behaviour patt
 ## 🏗️ Methodology
 
 **1. Data Modelling**
-Designed an upgraded star schema with `fact_orders` at the centre, connected to 4 dimension tables. Includes latitude/longitude for map visuals, customer segments, join dates for acquisition tracking, return flags, and a dedicated payment dimension.
+Upgraded star schema with fact_orders + 4 dimensions, including lat/long for maps, customer segments, join dates, return flags, and payment dimension.
 
 **2. Data Generation & ET Loading**
-Synthetic dataset generated using Python and loaded into SQL Server, illusttrating realistic e-commerce behaviour across 5 countries including seasonality, return patterns, and customer segmentation.
+Synthetic e-commerce data (5 countries, seasonality, returns, segments) generated with Python and loaded into SQL Server.
 
 **3. SQL Analysis**
-Wrote analytical queries using aggregations, CTEs, window functions, and joins to calculate customer lifetime value (CLV), acquisition trends, return rates, segment performance, and payment method breakdowns.
+Customer lifetime value (CLV), acquisition trends, return rates, segment performance, and payment breakdowns using CTEs, window functions, and joins.
 
 **4. Dashboard Development**
-Built an interactive Power BI dashboard featuring map visuals, segment breakdowns, acquisition trends, and payment method analysis - designed to give both executive and operational stakeholders a complete view of customer health.
+Interactive Power BI with maps, segment breakdowns, acquisition trends, and payment analysis for executive and operational stakeholders.
 
 ---
 
@@ -122,22 +122,22 @@ Star schema - `fact_orders` at the centre, joined to 4 dimension tables via fore
 ## 📋 Business Recommendations
 
 **1. Urgently address the At Risk segment**
-The At Risk segment holds the second highest CLV at R68,755.72 - nearly matching High Value customers. This means your most valuable customers are on the verge of churning. A targeted win-back campaign using personalised offers or direct outreach should be launched immediately to protect this revenue before it is lost permanently.
+R68,755 CLV (near High Value) means top customers are churning. Launch win-back campaigns with personalised offers immediately.
 
 **2. Protect and grow the High Value segment**
-At R68,777.74 CLV, High Value customers are the top revenue drivers. A dedicated loyalty programme - exclusive offers, early access, or account management - would strengthen retention and encourage further spend within this segment. Try to diversify to prevent revenue concentration risk.
+R68,777 CLV top drivers. Deploy loyalty programmes (exclusive offers, early access) and diversify to reduce concentration risk.
 
 **3. Double down on Q4 acquisition campaigns**
-November and December consistently drive the highest acquisition. Marketing budgets should be front-loaded into Q3 preparation to maximise Q4 conversion - stock, campaigns, and customer service capacity should all be scaled accordingly.
+Nov/Dec drive peak acquisition. Front-load budgets into Q3 for stock, campaigns, and staffing.
 
 **4. Investigate Electronics purchase dominance**
-Electronics drives purchase behaviour across segments. Understanding the 'why' - product quality, price point, brand loyalty - can inform how other categories are positioned to replicate this pattern and reduce revenue concentration risk.
+Understand why (quality? price? loyalty?) to replicate success in other categories and reduce concentration risk.
 
 **5. Monitor return rate by category and region**
-At 4.99% overall the return rate is healthy, but a breakdown by product category and country may reveal hidden problem areas being masked by the healthy average.
+4.99% overall is healthy, but breakdown may reveal hidden problems.
 
 **6. Expand in high-density geographic markets**
-Johannesburg, London, and New York show the highest customer concentration. Localised campaigns, currency optimisation, and region-specific product offerings in these markets would likely yield strong ROI.
+Johannesburg, London, New York have highest concentration. Localise campaigns, currency, and product offerings.
 
 ---
 
