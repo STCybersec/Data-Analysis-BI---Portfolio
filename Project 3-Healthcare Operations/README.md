@@ -37,16 +37,16 @@ Hospital leadership had access to raw admission records but no structured visibi
 ## 🏗️ Methodology
 
 **1. Data Modelling**
-Designed a star schema with fact_admissions at the center, linking five dimension tables capturing patient demographics (age groups, SA provinces), illness categories, bed capacity, doctor workload, admission types, outcomes, readmissions, and wait times.
+Star schema with fact_admissions + 5 dimensions covering patient demographics, illness categories, bed capacity, doctor workload, admissions, outcomes, readmissions, and wait times.
 
 **2. Data Generation & ETL Loading**
-Synthetic dataset generated using Python with realistic SA healthcare distributions.
+Synthetic SA healthcare data generated with Python using realistic distributions.
 
 **3. SQL Analysis**
-Wrote SQL analyses across basic, intermediate, and advanced levels, covering admissions, readmissions, mortality, length of stay, wait times, bed occupancy, diagnoses, age groups, and provincial trends using aggregations, CTEs, window functions, DATEDIFF, CASE, and LAG().
+Basic to advanced queries on admissions, readmissions, mortality, LOS, wait times, bed occupancy, and provincial trends using CTEs, window functions, DATEDIFF, CASE, and LAG().
 
 **4. Dashboard Development**
-Built a narrative-first Power BI dashboard featuring a cost-impact headline, KPI benchmarks, province pressure analysis, illness breakdowns, age group demand, and a 5-year trend-clearly showing what happened, why it matters, and next actions for leadership.
+Narrative-first Power BI with cost-impact headline, KPI benchmarks, province pressure analysis, illness breakdowns, age group demand, and 5-year trend showing what happened, why it matters, and next actions.
 
 ---
 
@@ -128,22 +128,22 @@ Star schema - `fact_admissions` at the centre, joined to 5 dimension tables via 
 ## 📋 Business Recommendations
 
 **1. 🔴 Immediately address wait times - 12.26 hours is a patient safety risk**
-Average wait time is 12.26 hours-over 50% above the 8-hour target and 3× the WHO 4-hour guideline-making it the most urgent issue. Fast-track hospital protocols, add intake staff during peak periods, and deploy a wait-time reduction task team immediately, as delays increase risk and dissatisfaction.
+50% above 8-hr target, 3× WHO guideline. Fast-track protocols, add peak intake staff, deploy task team immediately.
 
 **2. ⚠️ Launch a Chronic Disease Post-Discharge Program to reduce readmissions**
-Chronic diseases are the leading illness category and drive the 8.03% readmission rate-above the 6% target. A structured 7-day post-discharge follow-up for middle-aged and senior patients is the highest-impact intervention, with potential to cut readmissions by 20-30%, saving R22M annually and freeing significant bed capacity.
+Chronic diseases drive 8.03% readmissions (above 6% target). 7-day follow-up for middle-aged/senior patients could cut readmissions 20-30%, saving R22M annually.
 
 **3. ⚠️ Redirect resources to Gauteng and Western Cape**
-Gauteng (35%) and Western Cape (20%) absorb 55% of national admission volume. Resource allocation - staffing, equipment, and bed capacity - must be proportional to this demand. A province-weighted resource model should replace any current equal-distribution approach.
+These provinces absorb 55% of admissions. Implement province-weighted resource model for staffing, equipment, and beds.
 
 **4. 🟡 Protect mortality rate before it breaches the 2% threshold**
-Middle Aged and Senior patients - already the highest admission group - carry the highest mortality risk. Proactive clinical intervention protocols for these age groups would protect this metric before it becomes critical.
+Middle-aged and senior patients have highest mortality risk. Proactive clinical protocols needed now.
 
 **5. 🟡 Investigate public hospital capacity constraints**
-Current public hospital capacity will be insufficient within 2-3 years without intervention. A capacity expansion plan or public-clinic referral optimization strategy should be initiated now.
+Current capacity insufficient within 2-3 years. Begin expansion or clinic referral optimisation planning.
 
 **6. 🟢 Leverage clinics to reduce public hospital pressure**
-Many acute and non-emergency cases currently going to public hospitals could be redirected to clinics - reducing public hospital load, cutting wait times, and lowering cost per admission. A structured referral optimization program between clinics and hospitals would address multiple KPIs simultaneously.
+Redirect acute/non-emergency cases to clinics. Structured referral optimisation would reduce load, cut wait times, and lower costs simultaneously.
 
 ---
 
