@@ -59,7 +59,7 @@ dim_request_types   ──┤
 dim_dates           ──┘
 ```
 
-Star schema — `fact_service_requests` at the centre, joined to 5 dimension tables via foreign keys (One to many connections).
+Star schema - `fact_service_requests` at the centre, joined to 5 dimension tables via foreign keys (One to many connections).
 
 ---
 
@@ -171,6 +171,7 @@ Project4-Government-Service-Delivery/
 │   └── model_view.png
 └── README.md
 ```
+> **fact_service_requests is not stored as CSV due to file size. Run generate_fact_service_requests.sql to recreate the full 500,000 row dataset locally.**
 
 ---
 
