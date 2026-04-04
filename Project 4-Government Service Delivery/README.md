@@ -8,7 +8,7 @@
 
 ## 📌 Executive Summary
 
-Service delivery failure is one of South Africa's most persistent governance challenges - affecting millions of citizens daily through water outages, electricity failures, pothole-riddled roads, and housing backlogs. This project analysed **500,000 service delivery requests** across **24 municipalities** in Gauteng, Western Cape, and KwaZulu-Natal over 5 years (2021–2025). The analysis delivered an executive Power BI dashboard designed to give Department of Cooperative Governance leadership a clear, data-driven view of municipal performance, SLA compliance, budget utilisation, and citizen satisfaction - identifying which municipalities are failing and what it is costing the fiscus.
+Service delivery failure is one of South Africa's most persistent governance challenges - affecting millions of citizens daily through water outages, electricity failures, pothole-riddled roads, and housing backlogs. This project analysed **500,000 service delivery requests** across **24 municipalities** in Gauteng, Western Cape, and KwaZulu-Natal over 5 years (2021-2025). The analysis delivered an executive Power BI dashboard designed to give Department of Cooperative Governance leadership a clear, data-driven view of municipal performance, SLA compliance, budget utilisation, and citizen satisfaction - identifying which municipalities are failing and what it is costing the fiscus.
 
 ---
 
@@ -36,16 +36,16 @@ Municipal leadership and provincial government had access to raw service request
 ## 🏗️ Methodology
 
 **1. Data Modelling**
-Government star schema with fact_service_requests + 5 dimensions capturing citizen demographics, municipality/province, department SLAs, request types, budgets, satisfaction, compliance flags, and escalations.
+Government star schema: fact_service_requests + 5 dimensions covering citizen demographics, municipality/province, department SLAs, request types, budgets, satisfaction, compliance, and escalations.
 
 **2. Data Generation & ETL Loading**
-Synthetic SA municipal data (60% SLA compliance reflecting real underperformance, Gauteng at 45% volume, budget variance patterns) generated with Python.
+Synthetic SA municipal data (60% SLA compliance reflecting real underperformance, 45% Gauteng volume weighting, budget variance patterns) using Python.
 
 **3. SQL Analysis**
-Basic to advanced queries on request volumes, SLA compliance, budget variance, resolution times, escalations, satisfaction, municipal rankings, cost per request, and MoM trends using NULLIF(), SUM(CASE), weighted scoring, and LAG().
+Request volumes, SLA compliance, budget variance, resolution times, escalations, satisfaction, municipal rankings, cost/request, and MoM trends using NULLIF(), SUM(CASE), weighted scoring, and LAG().
 
 **4. Dashboard Development**
-Executive Power BI with narrative-first design: SLA compliance + budget headlines, color-coded municipal rankings, department resolution analysis, request breakdown, and budget variance showing what's failing, where, and at what cost.
+Executive Power BI with narrative-first design: SLA + budget headlines, color-coded municipal rankings, department resolution, request breakdown, and budget variance showing what's failing, where, and at what cost.
 
 ---
 
