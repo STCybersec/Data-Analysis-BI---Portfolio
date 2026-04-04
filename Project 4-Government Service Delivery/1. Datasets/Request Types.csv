@@ -1,0 +1,20 @@
+﻿1,Burst Pipe / Water Outage,Water & Sanitation
+2,No Water Supply,Water & Sanitation
+3,Electricity Outage,Electricity
+4,Meter / Billing Issue,Electricity
+5,Pothole Repair,Roads & Transport
+6,Traffic Light Fault,Roads & Transport
+7,RDP Housing Delay,Housing
+8,Housing Maintenance,Housing
+9,Refuse Collection Missed,Waste Management
+10,Illegal Dumping,Waste Management
+11,Broken Streetlight,Public Safety
+12,Park / Public Space Issue,Public Safety
+13,Social Grant Issue,Social Services
+14,Documentation / ID Issue,Social Services
+15,School Maintenance,Education Facilities
+16,Pollution / Drainage Issue,Environmental Affairs
+17,Clinic Access Issue,Health Services
+18,Ambulance Response Delay,Health Services
+19,Street Cleaning,Waste Management
+20,Road Signage Missing,Roads & Transport
