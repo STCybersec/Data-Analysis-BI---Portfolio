@@ -14,7 +14,7 @@ Service delivery failure is one of South Africa's most persistent governance cha
 
 ## 🧩 Business Problem
 
-Municipal leadership and provincial government had access to raw service request logs but no structured visibility into operational performance. Critical questions remained unanswered: Which municipalities are consistently failing SLA targets? Where is budget being wasted? Which service request types take the longest to resolve? Which departments are underperforming on citizen satisfaction? Without this visibility, interventions, budget reallocation, and accountability measures were being applied without data-driven direction - while service delivery protests continued to signal systemic failure on the ground.
+Which municipalities are consistently failing SLA targets? Where is budget being wasted? Which service request types take the longest to resolve? Which departments are underperforming on citizen satisfaction? Without this visibility, interventions, budget reallocation, and accountability measures were being applied without data-driven direction - while service delivery protests continued to signal systemic failure on the ground.
 
 ---
 
