@@ -2,7 +2,7 @@
 
 **Industry:** Public Sector - Municipal Government (South Africa)
 **Tools:** SQL Server · Power BI · Python · Star Schema Modeling
-**Status:** 🔄 In Progress
+**Status:** ✅ Complete
 
 ---
 
