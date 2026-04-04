@@ -34,17 +34,17 @@ The retail business lacked a centralised view of sales performance. Decision-mak
 
 ## 🏗️ Methodology
 
-**1. Data Modelling**
-Designed a star schema with `fact_sales` at the centre, connected to 4 dimension tables via foreign keys. This structure enables fast, flexible querying across any combination of product, customer, region, and time.
+**1. Star Schema Design**
+Central fact_sales linked to 4 dimension tables (product, customer, region, time) for fast, flexible querying.
 
 **2. Data Generation & Loading**
-Synthetic dataset generated using Python and loaded into SQL Server, simulating realistic retail transaction patterns including seasonality and regional variation.
+Generated realistic retail transaction data with Python, loaded into SQL Server.
 
 **3. SQL Analysis**
-Wrote analytical queries using aggregations, multi-table joins, CTEs, and window functions (`LAG`, `RANK`) to answer core business questions and surface trends over time.
+Used aggregations, joins, CTEs, and window functions (LAG, RANK) to answer business questions.
 
 **4. Dashboard Development**
-Built an executive Power BI dashboard with KPI cards, trend charts, category breakdowns, regional comparisons, and a top customer table - designed for non-technical stakeholders.
+Built executive dashboard with KPIs, trend charts, category/region breakdowns, and top customers for non-technical stakeholders.
 
 ---
 
@@ -117,19 +117,19 @@ Star schema - `fact_sales` at the centre, joined to 4 dimension tables via forei
 ## 📋 Business Recommendations
 
 **1. Double down on Electronics**
-With 50% of revenue from one category, there is a risk of customer concentration risk. Ensure stock levels, supplier relationships, and marketing budgets reflect this dependency. Diversification risk should also be assessed.
+50% of revenue from one category creates concentration risk. Align stock, suppliers, and marketing accordingly.
 
 **2. Invest in the International region**
-Leading revenue despite the smallest customer count signals high revenue-per-customer efficiency. This market warrants dedicated sales resources and expansion planning.
+Highest revenue with fewest customers = high efficiency. Dedicate sales resources and expansion planning.
 
 **3. Build a VIP retention programme**
-The top 10 customers averaging ~R197K each represent disproportionate value. A targeted retention strategy - loyalty benefits, account management - would protect this revenue.
+Top 10 customers average ~R197K each. Protect with loyalty benefits and account management.
 
 **4. Prepare for December demand**
-Consistent holiday spikes should inform inventory pre-loading, staffing, and promotional planning at least 60 days in advance.
+Plan inventory, staffing, and promotions 60 days ahead of holiday spikes.
 
 **5. Investigate underperforming regions**
-If International leads despite fewer customers, lower-performing regions should be audited for pricing, product mix, or sales capability gaps.
+Audit pricing, product mix, or sales gaps in regions lagging behind International.
 
 ---
 
