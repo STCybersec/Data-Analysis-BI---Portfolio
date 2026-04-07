@@ -1,153 +1,93 @@
 # 🏛️ Project 4 - Government Service Delivery Analytics
 
 **Industry:** Public Sector - Municipal Government (South Africa)
-**Tools:** SQL Server · Power BI · Python · Star Schema Modeling
+**Tools:** SQL Server · Power BI · Python · Star Schema Modelling
 **Status:** ✅ Complete
 
 ---
 
 ## 📌 Executive Summary
 
-Service delivery failure is one of South Africa's most persistent governance challenges - affecting millions of citizens daily through water outages, electricity failures, pothole-riddled roads, and housing backlogs. This project analysed **500,000 service delivery requests** across **24 municipalities** in Gauteng, Western Cape, and KwaZulu-Natal over 5 years (2021-2025). The analysis delivered an executive Power BI dashboard designed to give Department of Cooperative Governance leadership a clear, data-driven view of municipal performance, SLA compliance, budget utilisation, and citizen satisfaction - identifying which municipalities are failing and what it is costing the fiscus.
+500,000 municipal service requests across 24 municipalities in Gauteng, Western Cape and KwaZulu-Natal were analysed over 5 years (2021-2025). The analysis revealed that only **41.99% of requests are resolved within SLA targets** and **R2.65B in budget went underspent** - not savings, but projects that were never delivered. This dashboard gives Department of Cooperative Governance leadership a data-driven view of where the system is failing and what it is costing citizens.
 
 ---
 
-## 🧩 Business Problem
-
-Which municipalities are consistently failing SLA targets? Where is budget being wasted? Which service request types take the longest to resolve? Which departments are underperforming on citizen satisfaction? Without this visibility, interventions, budget reallocation, and accountability measures were being applied without data-driven direction - while service delivery protests continued to signal systemic failure on the ground.
-
----
-
-## 🗂️ Dataset
-
-| Table | Rows | Description |
-|-------|------|-------------|
-| fact_service_requests | 500,000 | Service requests with resolution, budget and SLA data |
-| dim_citizens | 20,000 | Citizen demographics across 3 provinces |
-| dim_departments | 10 | Government departments with SLA targets |
-| dim_municipalities | 24 | SA municipalities across Gauteng, Western Cape, KZN |
-| dim_request_types | 20 | SA-specific service request categories |
-| dim_dates | 1,826 | Full date dimension 2021–2025 |
-
-> **Data generated using Python + SQL Server using realistic SA municipal performance distributions. No real citizen data used.**
-
----
-
-## 🏗️ Methodology
-
-**1. Data Modelling**
-Government star schema: fact_service_requests + 5 dimensions covering citizen demographics, municipality/province, department SLAs, request types, budgets, satisfaction, compliance, and escalations.
-
-**2. Data Generation & ETL Loading**
-Synthetic SA municipal data (60% SLA compliance reflecting real underperformance, 45% Gauteng volume weighting, budget variance patterns) using Python.
-
-**3. SQL Analysis**
-Request volumes, SLA compliance, budget variance, resolution times, escalations, satisfaction, municipal rankings, cost/request, and MoM trends using NULLIF(), SUM(CASE), weighted scoring, and LAG().
-
-**4. Dashboard Development**
-Executive Power BI with narrative-first design: SLA + budget headlines, color-coded municipal rankings, department resolution, request breakdown, and budget variance showing what's failing, where, and at what cost.
-
----
-
-## 🏗️ Data Model
+## 🗂️ Data Model
 
 ```
 dim_citizens        ──┐
 dim_departments     ──┤
-dim_municipalities  ──┼──► fact_service_requests
+dim_municipalities  ──┼──► fact_service_requests (500,000 rows)
 dim_request_types   ──┤
 dim_dates           ──┘
 ```
 
-Star schema - `fact_service_requests` at the centre, joined to 5 dimension tables via foreign keys (One to many connections).
+| Table | Rows | Description |
+|-------|------|-------------|
+| fact_service_requests | 500,000 | Requests with resolution, budget and SLA data |
+| dim_citizens | 20,000 | Citizen demographics |
+| dim_departments | 10 | Departments with SLA targets |
+| dim_municipalities | 24 | SA municipalities across 3 provinces |
+| dim_request_types | 20 | SA-specific service categories |
+| dim_dates | 1,826 | 2021–2025 date dimension |
+
+> *<img width="1463" height="720" alt="Model_View (2)" src="https://github.com/user-attachments/assets/305c394f-24c4-4ad8-ad9b-002b0af6ffb8" />*
+
+---
+
+## 📊 Key Results
+
+| Metric | Value | Benchmark | Status |
+|--------|-------|-----------|--------|
+| SLA Compliance | 41.99% | > 70% | 🔴 Critical |
+| Escalation Rate | 9.93% | < 5% | 🔴 Above Target |
+| Avg Resolution Days | 7.77 days | Per SLA | ⚠️ Mixed |
+| Budget Underspent | R2.65B | Zero variance | 🔴 Non-delivery |
+| Satisfaction Score | 3.75 / 5 | > 4.0 | ⚠️ Below Target |
+| Top Request Type | Burst Pipe / Water Outage | - | Infrastructure crisis |
+
+> *<img width="924" height="728" alt="Dashboard_Preview (2)" src="https://github.com/user-attachments/assets/b86b00d7-fc04-4a93-ad5c-dfe945963372" />*
+
+---
+
+## 🔍 DMAIC Analysis
+
+**Define**
+SA municipalities are failing to resolve citizen service requests on time. Less than half of 500,000 requests logged between 2021 and 2025 were resolved within their SLA targets - directly impacting citizen trust and service delivery outcomes.
+
+**Measure**
+41.99% SLA compliance. 9.93% escalation rate - double the 5% benchmark. Housing department averages 15.9 days to resolve requests against a 14-day target. R2.65B allocated but unspent across all departments.
+
+**Analyze - Whys**
+1. Requests are not resolved on time → departments exceed SLA targets
+2. Departments exceed targets → Housing and Education breach most consistently
+3. Housing and Education breach most → 10% of requests escalated beyond frontline staff
+4. Requests escalate → frontline staff lack authority to approve spend or procure contractors
+5. Frontline staff lack authority → municipal procurement requires multi-level approval for any expenditure
+
+**Root cause: Procurement bureaucracy and lack of frontline decision-making authority is the primary SLA failure driver - not staff capacity.**
+
+**Improve**
+Delegate procurement authority up to R50,000 to department heads for standard service requests. Implement a 7-day fast-track resolution protocol for Critical and High priority requests. Introduce monthly SLA performance reporting per municipality with automatic escalation triggers.
+
+**Control**
+Monthly Power BI dashboard review at municipal manager level. Any municipality falling below 50% SLA compliance triggers a provincial performance improvement plan. Quarterly budget utilisation review to address underspending before year-end.
+
+---
+
+## 📋 Recommendations
+
+1. 🔴 **Intervene in bottom-performing municipalities** - Section 139 intervention for municipalities with SLA compliance below 40%
+2. 🔴 **Investigate R2.65B underspend** - forensic review per department to identify whether cause is planning failure, procurement delay or capacity constraint
+3. ⚠️ **Fix first-line resolution** - reduce escalation rate from 10% to below 5% through frontline authority delegation
+4. ⚠️ **Prioritise Water & Sanitation** - Burst Pipe is the most common request type, signalling ageing infrastructure requiring a ring-fenced maintenance budget
+5. 🟢 **Replicate top performer practices** - structured peer-learning between highest and lowest ranked municipalities
 
 ---
 
 ## 🛠️ Skills Demonstrated
 
-- Star schema design with 5 dimension tables
-- SQL - aggregations, multi-table joins, CTEs, NULLIF(), CASE WHEN inside SUM(), composite scoring, LAG() for MoM trends
-- Python - synthetic government data generation with realistic SA municipal distributions
-- Power BI - municipal performance dashboards, budget variance analysis, SLA compliance tracking
-- Government analytics - SLA compliance, escalation rates, budget variance, cost per request, composite performance ranking
-- Business value quantification - translating SLA failures into rand cost impact
-
----
-
-## ❓ Business Questions & Key Insights
-
-| Business Question | Key Finding |
-|---|---|
-| What is the overall SLA compliance rate? | Only 41.99% of requests resolved within SLA targets - critically below the 70% benchmark |
-| Which province generates the most requests? | Gauteng leads with 228,460 requests - 45% of national volume |
-| Which municipality is failing worst? | Ranked by SLA breach rate - bottom performers identified for intervention |
-| Which department takes longest to resolve? | Housing averages 11+ days - highest resolution time across all departments |
-| What is the budget situation? | R12.6B allocated vs R9.9B spent - R2.6B underspent, signalling project non-delivery |
-| Which request type is most common? | Burst Pipe / Water Outage leads - infrastructure decay is the primary citizen complaint |
-| What is the escalation rate? | ~10% of requests escalated - indicating systemic failure in first-line resolution |
-| What do citizens think? | Satisfaction scores reveal which departments are failing citizen experience |
-
----
-
-## 📊 Power BI Dashboard
-
-> *Screenshot coming soon*
-
-**Dashboard includes:**
-- KPI Cards - Total Requests, SLA Compliance %, Avg Resolution Days, Escalation Rate, Budget Variance
-- Requests by Municipality (Bar Chart - performance league table)
-- Request Status Breakdown (Donut Chart - open vs resolved vs escalated)
-- Avg Resolution Days by Department (Bar Chart - slowest departments)
-- Monthly Request Trend (Line Chart - 5 year comparison)
-- Budget Allocated vs Spent by Department (Clustered Bar - waste analysis)
-- Satisfaction Score by Department (Bar Chart - citizen experience)
-
----
-
-## 💡 Key Results
-
-| Metric | Value | Benchmark | Status |
-|--------|-------|-----------|--------|
-| 📋 Total Requests | 500,000 | — | — |
-| ✅ SLA Compliance Rate | 41.99% | > 70% | 🔴 Critical |
-| ⏱️ Avg Resolution Days | Varies by dept | Per SLA target | ⚠️ Mixed |
-| ⬆️ Escalation Rate | ~10% | < 5% | 🔴 Above Target |
-| 💰 Budget Allocated | R12.6B | — | — |
-| 💰 Budget Spent | R9.9B | — | — |
-| 💰 Budget Underspent | R2.6B | 0 variance | 🔴 Non-delivery |
-| 🏆 Most Common Request | Burst Pipe / Water Outage | — | Infrastructure crisis |
-| 📍 Highest Volume Province | Gauteng | — | 45% of all requests |
-
----
-
-## 📋 Business Recommendations
-
-**1. 🔴 Declare a service delivery intervention in bottom-performing municipalities**
-41.99% SLA compliance means <50% of requests resolved on time. Flag for provincial intervention (Section 139) with monthly performance improvement plans.
-
-**2. 🔴 Investigate R2.6 billion in budget underspending**
-This represents services not delivered, not savings. Conduct forensic budget review per department/municipality for planning failures or procurement delays. Reallocate unspent funds to highest-need areas.
-
-**3. ⚠️ Fix first-line resolution to reduce escalation rate**
-10% escalation rate (double 5% benchmark). Frontline staff need authority, resources, and training to resolve requests at point of contact.
-
-**4. ⚠️ Prioritise Water & Sanitation infrastructure repair**
-Burst pipe/water outage is the most common request, indicating ageing infrastructure. Ring-fence maintenance budget for water reticulation with preventive scheduling.
-
-**5. 🟡 Implement Housing department process reform**
-11+ day average resolution (highest across all departments). Implement process mapping, digital case management, and dedicated housing officers per municipality.
-
-**6. 🟢 Replicate top-performing municipality practices**
-Top municipalities prove high compliance is achievable. Launch peer-learning program for bottom performers at minimal cost.
-
----
-
-## 🔮 Planned Enhancements
-
-- Ward-level service request mapping for hyper-local performance analysis
-- Budget utilisation forecasting model - predict year-end underspending by Q3
-- Citizen satisfaction trend analysis by request type and province
-- SLA breach cost quantification - rand value of every day beyond target
+SQL · Power BI · Python · Star Schema · CTEs · Window Functions · CASE WHEN · LAG() · Composite Scoring · NULLIF() · Budget Variance Analysis · DMAIC · Root Cause Analysis
 
 ---
 
@@ -155,23 +95,14 @@ Top municipalities prove high compliance is achievable. Launch peer-learning pro
 
 ```
 Project4-Government-Service-Delivery/
-├── dataset/
-│   ├── dim_citizens.csv
-│   ├── dim_departments.csv
-│   ├── dim_municipalities.csv
-│   ├── dim_request_types.csv
-│   ├── dim_dates.csv
-│   └── fact_service_requests.csv
+├── dataset/          → 5 dimension table CSVs
 ├── sql/
-│   └── government_analysis.sql
-├── dashboard/
-│   └── government_service_delivery.pbix
-├── images/
-│   ├── dashboard_preview.png
-│   └── model_view.png
+│   ├── government_analysis.sql       → analytical queries
+│   └── DATA_GENERATION_NOTES.md      → fact table generation notes
+├── dashboard/        → government_service_delivery.pbix
+├── images/           → dashboard_preview.png | model_view.png
 └── README.md
 ```
-> **fact_service_requests is not stored as CSV due to file size. Run generate_fact_service_requests.sql to recreate the full 500,000 row dataset locally.**
 
 ---
 
