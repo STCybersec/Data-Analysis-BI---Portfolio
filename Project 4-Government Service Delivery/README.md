@@ -50,7 +50,7 @@ dim_dates           ──┘
 
 ---
 
-## 🔍 DMAIC Analysis
+## 🔍 Feedback Analysis
 
 **Define**
 SA municipalities are failing to resolve citizen service requests on time. Less than half of 500,000 requests logged between 2021 and 2025 were resolved within their SLA targets - directly impacting citizen trust and service delivery outcomes.
