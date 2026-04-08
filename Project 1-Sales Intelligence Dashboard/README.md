@@ -12,12 +12,6 @@ A retail business operating across 3 countries needed visibility into revenue pe
 
 ---
 
-## 🧩 Business Problem
-
-The retail business lacked a centralised view of sales performance. Decision-makers could not easily identify which products, regions, or customers were driving revenue - or spot seasonal patterns that could inform stock and marketing strategies. Without this visibility, budget and resource allocation decisions were being made without reliable data.
-
----
-
 ## 🗂️ Data Model
 
 ```
