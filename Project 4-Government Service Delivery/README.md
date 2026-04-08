@@ -29,7 +29,7 @@ dim_dates           ──┘
 | dim_departments | 10 | Departments with SLA targets |
 | dim_municipalities | 24 | SA municipalities across 3 provinces |
 | dim_request_types | 20 | SA-specific service categories |
-| dim_dates | 1,826 | 2021–2025 date dimension |
+| dim_dates | 1,826 | 2021-2025 date dimension |
 
 > *<img width="1463" height="720" alt="Model_View (2)" src="https://github.com/user-attachments/assets/305c394f-24c4-4ad8-ad9b-002b0af6ffb8" />*
 
@@ -39,14 +39,14 @@ dim_dates           ──┘
 
 | Metric | Value | Benchmark | Status |
 |--------|-------|-----------|--------|
-| SLA Compliance | 41.99% | > 70% | 🔴 Critical |
-| Escalation Rate | 9.93% | < 5% | 🔴 Above Target |
+| SLA Compliance | 41.99% | < 70% | 🔴 Critical |
+| Escalation Rate | 9.93% | > 5% | 🔴 Above Target |
 | Avg Resolution Days | 7.77 days | Per SLA | ⚠️ Mixed |
 | Budget Underspent | R2.65B | Zero variance | 🔴 Non-delivery |
-| Satisfaction Score | 3.75 / 5 | > 4.0 | ⚠️ Below Target |
+| Satisfaction Score | 3.75 / 5 | < 4.0 | ⚠️ Below Target |
 | Top Request Type | Burst Pipe / Water Outage | - | Infrastructure crisis |
 
-> *<img width="924" height="728" alt="Dashboard_Preview (2)" src="https://github.com/user-attachments/assets/b86b00d7-fc04-4a93-ad5c-dfe945963372" />*
+> *<img width="920" height="730" alt="Dashboard_Preview (3)" src="https://github.com/user-attachments/assets/c76bb2d9-807a-41a1-9d8d-8848e35e96a4" />*
 
 ---
 
