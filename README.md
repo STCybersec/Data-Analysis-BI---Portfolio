@@ -68,7 +68,7 @@ Data-Analysis-BI---Portfolio/
 | 1 | [Sales Intelligence Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%201-Sales%20Intelligence%20Dashboard) | Retail | ✅ Complete |
 | 2 | [Customer Retention Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%202-Customer%20Retention) | E-Commerce | ✅ Complete |
 | 3 | [Healthcare Operations Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%203-Healthcare%20Operations) | Healthcare | ✅ Complete |
-| 4 | [Government Service Delivery Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%204-Government%20Service%20Delivery) | Public Sector | 🔄 In Progress |
+| 4 | [Government Service Delivery Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%204-Government%20Service%20Delivery) | Public Sector | ✅ Complete |
 | 5 | [Supply Chain Control Tower](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%205-Supply%20Chain%20Control%20Tower) | Logistics | 🔄 In Progress |
 | 6 | [Fintech Revenue Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%206-Fintech%20Revenue%20Analytics) | Financial Services | 🔄 In Progress |
 
