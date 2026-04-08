@@ -99,8 +99,8 @@ Project4-Government-Service-Delivery/
 ├── sql/
 │   ├── government_analysis.sql       → analytical queries
 │   └── DATA_GENERATION_NOTES.md      → fact table generation notes
-├── dashboard/        → government_service_delivery.pbix
-├── images/           → dashboard_preview.png | model_view.png
+├── dashboard/        → Dashboard_Preview(3).png
+├── images/           → Dashboard_Preview.png | model_view.png
 └── README.md
 ```
 
