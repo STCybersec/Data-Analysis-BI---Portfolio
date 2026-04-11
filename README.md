@@ -70,7 +70,7 @@ Data-Analysis-BI---Portfolio/
 | 3 | [Healthcare Operations Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%203-Healthcare%20Operations) | Healthcare | ✅ Complete |
 | 4 | [Government Service Delivery Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%204-Government%20Service%20Delivery) | Public Sector | ✅ Complete |
 | 5 | [Supply Chain Control Tower](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%205-Supply%20Chain%20Control%20Tower) | Logistics | ✅ Complete |
-| 6 | [Fintech Revenue Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%206-Fintech%20Revenue%20Analytics) | Financial Services | 🔄 In Progress |
+| 6 | [Fintech Revenue Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%206-Fintech%20Revenue%20Analytics) | Financial Services | ✅ Complete |
 
 ---
 
@@ -190,7 +190,7 @@ Tracking government service requests, resolution times, and departmental perform
 
 ## Project 5 - Supply Chain Control Tower
 
-**Industry:** Logistics | **Status:** 🔄 In Progress
+**Industry:** Logistics | **Status:** ✅ Complete
 
 End-to-end supply chain analytics tracking shipments, warehouse efficiency, and delivery performance.
 
@@ -205,7 +205,7 @@ End-to-end supply chain analytics tracking shipments, warehouse efficiency, and 
 
 ## Project 6 - Fintech Revenue Analytics
 
-**Industry:** Financial Services | **Status:** 🔄 In Progress
+**Industry:** Financial Services | **Status:** ✅ Complete
 
 Transaction and revenue analytics for a payments platform including merchant performance and payment method analysis.
 
