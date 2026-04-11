@@ -184,7 +184,7 @@ Tracking government service requests, resolution times, and departmental perform
 - What is the average resolution time per department?
 - Which departments have the highest backlog?
 
-[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%204-Government%20Service%20Delivery) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%204-Government%20Service%20Delivery)
 
 ---
 
@@ -199,7 +199,7 @@ End-to-end supply chain analytics tracking shipments, warehouse efficiency, and 
 - Which warehouses process the most orders?
 - Where are delays happening?
 
-[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%205-Supply%20Chain%20Control%20Tower) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%205-Supply%20Chain%20Control%20Tower)
 
 ---
 
@@ -214,7 +214,7 @@ Transaction and revenue analytics for a payments platform including merchant per
 - What is daily transaction volume?
 - Which merchants process the most payments?
 
-[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%206-Fintech%20Revenue%20Analytics) *(Coming Soon)*
+[📂 View Project →](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Project%206-Fintech%20Revenue%20Analytics)
 
 ---
 
