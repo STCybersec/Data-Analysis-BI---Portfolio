@@ -40,7 +40,7 @@ dim_dates           ──┘
 | Metric | Value | Benchmark | Status |
 |--------|-------|-----------|--------|
 | SLA Compliance | 41.99% | < 70% | 🔴 Critical |
-| Escalation Rate | 9.93% | < 5% | 🔴 Above Target |
+| Escalation Rate | 9.93% | > 5% | 🔴 Above Target |
 | Avg Resolution Days | 7.77 days | Per SLA | ⚠️ Mixed |
 | Budget Underspent | R2.65B | Zero variance | 🔴 Non-delivery |
 | Satisfaction Score | 3.75 / 5 | < 4.0 | ⚠️ Below Target |
