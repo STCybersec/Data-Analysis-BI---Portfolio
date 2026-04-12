@@ -49,7 +49,7 @@ dim_dates         ──┘
 | Top Device | Mobile | 55.29% | Digital-first platform |
 | Top Payment | Digital | — | Wallets dominate |
 
-> *<img width="1164" height="623" alt="Dashboard_Preview" src="https://github.com/user-attachments/assets/fb824c76-b6fa-431d-8c75-439d6958a567" />*
+> *<img width="1162" height="625" alt="Dashboard_Preview" src="https://github.com/user-attachments/assets/5bc6bc12-1f76-47fa-9924-81d15fcb9206" />*
 ---
 
 ## 🔍 Analysis
