@@ -25,4 +25,4 @@ For the full 500,000 row dataset contact:
 
 ---
 
-*Part of the [Fintech Analysis Project](../README.md) by Sanele Siyabonga Thusi*
+*Part of the [Fintech Revenue Analytics Project](../README.md) by Sanele Siyabonga Thusi*
