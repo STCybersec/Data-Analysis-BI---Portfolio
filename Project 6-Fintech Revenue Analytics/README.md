@@ -107,11 +107,11 @@ Project6-Fintech-Revenue-Analytics/
 │   ├── Locations.csv
 │   └── Dates.csv
 ├── sql/
-│   └── fintech_analysis.sql
+│   └── Fintech_Analysis.sql
 ├── dashboard/
-│   └── Fintech_Analytics.pbix
+│   └── Fintech_Analysis.pbix
 ├── images/
-│   ├──Dashboard_Preview.png
+│   ├─  Dashboard_Preview.png
 │   └── Model_View.png
 └── README.md
 ```
