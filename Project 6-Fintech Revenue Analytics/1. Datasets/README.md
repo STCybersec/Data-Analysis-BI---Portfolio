@@ -2,7 +2,7 @@
 
 ## About This Dataset
 
-`Transactions` contains **500,000 shipment records** generated using Python and loaded into SQL Server, covering a wide range operations in South Africa, UK, USA and UAE from 2021 to 2025.
+`fact_transactions` contains 500,000 financial transaction records generated using Python and loaded into SQL Server, covering payment platform operations across South Africa, UK, USA and UAE from 2021 to 2025.
 
 ---
 
