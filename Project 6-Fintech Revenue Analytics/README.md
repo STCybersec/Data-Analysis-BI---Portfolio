@@ -67,7 +67,7 @@ Platform fee revenue of R66.40M represents a 2.5% average fee rate across 500K t
 4. POS infrastructure gaps → merchant onboarding in SA and UAE did not include POS device capability testing
 5. No capability testing → platform had no transaction success monitoring by device type or merchant category before this analysis
 
-**Root cause: Absence of transaction success monitoring by device and merchant category allowed a systemic POS failure pattern to persist undetected — costing the platform an estimated R5.3M in lost fee revenue annually.**
+**Root cause: Absence of transaction success monitoring by device and merchant category allowed a systemic POS failure pattern to persist undetected - costing the platform an estimated R5.3M in lost fee revenue annually.**
 
 **Improve**
 Implement real-time transaction success monitoring by device type and merchant. Require POS capability testing as part of merchant onboarding. Target failed transaction reduction from 7.94% to below 5% through device-merchant compatibility checks. Deploy fraud detection model flagging transactions above R50K from new devices in high-risk merchant categories.
