@@ -29,7 +29,7 @@ dim_dates         ──┘
 | dim_merchants | 25 | Merchants across 7 categories and 4 markets |
 | dim_payment_types | 8 | Payment methods including crypto and BNPL |
 | dim_locations | 15 | Cities with coordinates and currency |
-| dim_dates | 1,826 | 2021–2025 date dimension |
+| dim_dates | 1,826 | 2021-2025 date dimension |
 
 > *<img width="1450" height="722" alt="Model_View" src="https://github.com/user-attachments/assets/8c6c5050-1e47-4384-8434-0395e5c1cf2f" />*
 ---
