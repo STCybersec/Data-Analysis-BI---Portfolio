@@ -78,12 +78,12 @@ Data-Analysis-BI---Portfolio/
 
 | # | Dataset | Linked Project | Status |
 |---|---------|----------------|--------|
-| 1 | [Sales Intelligence Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Sales_Intelligence_Dashboard) | Project 1 - Sales Intelligence Dashboard | 🔄 In Progress |
-| 2 | [Customer Retention Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Customer_Retention) | Project 2 - Customer Retention Analytics | 🔄 In Progress |
-| 3 | [Healthcare Operations Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Healthcare_Operations) | Project 3 - Healthcare Operations Dashboard | 🔄 In Progress |
-| 4 | [Government Service Delivery Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Government_Service_Delivery) | Project 4 - Government Service Delivery Analytics | 🔄 In Progress |
-| 5 | [Supply Chain Control Tower](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Supply_Chain_Control_Tower) | Project 5 - Supply Chain Control Tower | 🔄 In Progress |
-| 6 | [Fintech Revenue Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Fintech_Revenue_Analytics) | Project 6 - Fintech Revenue Analytics | 🔄 In Progress |
+| 1 | [Sales Intelligence Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Sales_Intelligence_Dashboard) | Project 1 - Sales Intelligence Dashboard | ✅ Complete |
+| 2 | [Customer Retention Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Customer_Retention) | Project 2 - Customer Retention Analytics | ✅ Complete |
+| 3 | [Healthcare Operations Dashboard](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Healthcare_Operations) | Project 3 - Healthcare Operations Dashboard | ✅ Complete |
+| 4 | [Government Service Delivery Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Government_Service_Delivery) | Project 4 - Government Service Delivery Analytics | ✅ Complete |
+| 5 | [Supply Chain Control Tower](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Supply_Chain_Control_Tower) | Project 5 - Supply Chain Control Tower | ✅ Complete |
+| 6 | [Fintech Revenue Analytics](https://github.com/STCybersec/Data-Analysis-BI---Portfolio/tree/main/Python-Data-Cleaning/Fintech_Revenue_Analytics) | Project 6 - Fintech Revenue Analytics | ✅ Complete |
 
 **What this section demonstrates:**
 - Identifying and handling missing values
