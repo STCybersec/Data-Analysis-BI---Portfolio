@@ -1,5 +1,5 @@
 # ============================================================
-# Project 4: Government Service Delivery Analytics
+# Project 5: Supply Chain Control Tower
 # Data Cleaning Script
 # Author: Sanele Siyabonga Thusi
 # Tool: Python (Pandas)
@@ -9,17 +9,17 @@ import pandas as pd
 import numpy as np
 
 print("=" * 60)
-print("PROJECT 4 - Government Service Delivery Analytics")
+print("PROJECT 5 - Supply Chain Control Tower")
 print("Data Cleaning Report")
 print("=" * 60)
 
 # === Load Data
-fact_requests     = pd.read_csv("fact_service_requests.csv")
-dim_citizens      = pd.read_csv("dim_citizens.csv")
-dim_departments   = pd.read_csv("dim_departments.csv")
-dim_municipalities= pd.read_csv("dim_municipalities.csv")
-dim_request_types = pd.read_csv("dim_request_types.csv")
-dim_dates         = pd.read_csv("dim_dates.csv")
+fact_shipments = pd.read_csv("fact_shipments_sample.csv")
+dim_warehouses = pd.read_csv("dim_warehouses.csv")
+dim_suppliers  = pd.read_csv("dim_suppliers.csv")
+dim_products   = pd.read_csv("dim_products.csv")
+dim_carriers   = pd.read_csv("dim_carriers.csv")
+dim_dates      = pd.read_csv("dim_dates.csv")
 
 # === Profile
 def profile(df, name):
@@ -28,112 +28,111 @@ def profile(df, name):
     print(f"Duplicates   : {df.duplicated().sum()}")
     print(f"Null counts  :\n{df.isnull().sum()[df.isnull().sum() > 0]}")
 
-profile(fact_requests,      "fact_service_requests")
-profile(dim_citizens,       "dim_citizens")
-profile(dim_departments,    "dim_departments")
-profile(dim_municipalities, "dim_municipalities")
+profile(fact_shipments, "fact_shipments")
+profile(dim_warehouses, "dim_warehouses")
+profile(dim_carriers,   "dim_carriers")
 
-# === Clean fact_service_requests
-print("\n[1] Removing duplicate request IDs...")
-before = len(fact_requests)
-fact_requests = fact_requests.drop_duplicates(subset=["request_id"])
-print(f"    Removed: {before - len(fact_requests)} duplicates")
+# === Clean fact_shipments
+print("\n[1] Removing duplicate shipment IDs...")
+before = len(fact_shipments)
+fact_shipments = fact_shipments.drop_duplicates(subset=["shipment_id"])
+print(f"    Removed: {before - len(fact_shipments)} duplicates")
 
 print("[2] Converting date columns to datetime...")
-fact_requests["date_submitted"] = pd.to_datetime(
-    fact_requests["date_submitted"], errors="coerce")
-fact_requests["date_resolved"] = pd.to_datetime(
-    fact_requests["date_resolved"], errors="coerce")
+for col in ["ship_date", "expected_date", "actual_delivery"]:
+    fact_shipments[col] = pd.to_datetime(fact_shipments[col], errors="coerce")
 
-print("[3] Flagging resolved requests with NULL resolution date...")
-missing_res = fact_requests[
-    (fact_requests["status"].isin(["Resolved", "Closed"])) &
-    (fact_requests["date_resolved"].isnull())
+print("[3] Flagging delivered shipments with NULL actual_delivery...")
+missing_del = fact_shipments[
+    (fact_shipments["delivery_status"] == "Delivered") &
+    (fact_shipments["actual_delivery"].isnull())
 ]
-print(f"    Found: {len(missing_res)} Resolved/Closed with no resolution date")
+print(f"    Found: {len(missing_del)} Delivered with no actual_delivery date")
 
-print("[4] Flagging negative resolution days...")
-neg_days = fact_requests[
-    fact_requests["resolution_days"].notna() &
-    (fact_requests["resolution_days"] < 0)
-]
-fact_requests.loc[
-    fact_requests["resolution_days"] < 0, "resolution_days"] = np.nan
-print(f"    Fixed: {len(neg_days)} negative resolution days set to NULL")
+print("[4] Removing negative delay days...")
+before = len(fact_shipments)
+fact_shipments.loc[fact_shipments["delay_days"] < 0, "delay_days"] = 0
+print(f"    Fixed: negative delay days set to 0")
 
-print("[5] Removing negative budget values...")
-before = len(fact_requests)
-fact_requests = fact_requests[fact_requests["budget_allocated"] > 0]
-print(f"    Removed: {before - len(fact_requests)} invalid budget rows")
+print("[5] Removing negative shipping costs...")
+before = len(fact_shipments)
+fact_shipments = fact_shipments[fact_shipments["shipping_cost"] > 0]
+print(f"    Removed: {before - len(fact_shipments)} invalid cost rows")
 
-print("[6] Validating SLA met flag (0 or 1 only)...")
-invalid = fact_requests[~fact_requests["sla_met"].isin([0, 1])]
-fact_requests = fact_requests[fact_requests["sla_met"].isin([0, 1])]
-print(f"    Removed: {len(invalid)} invalid sla_met flags")
+print("[6] Removing negative total values...")
+before = len(fact_shipments)
+fact_shipments = fact_shipments[fact_shipments["total_value"] > 0]
+print(f"    Removed: {before - len(fact_shipments)} invalid value rows")
 
-print("[7] Validating priority values...")
-valid_priorities = ["Critical", "High", "Medium", "Low"]
-fact_requests.loc[
-    ~fact_requests["priority"].isin(valid_priorities), "priority"] = "Unknown"
+print("[7] Validating on_time_delivery flag (0 or 1 only)...")
+invalid = fact_shipments[~fact_shipments["on_time_delivery"].isin([0, 1])]
+fact_shipments = fact_shipments[fact_shipments["on_time_delivery"].isin([0, 1])]
+print(f"    Removed: {len(invalid)} invalid on_time flags")
 
-print("[8] Validating status values...")
-valid_statuses = ["Resolved", "Open", "Escalated", "Closed"]
-fact_requests.loc[
-    ~fact_requests["status"].isin(valid_statuses), "status"] = "Unknown"
+print("[8] Validating return_flag (0 or 1 only)...")
+invalid = fact_shipments[~fact_shipments["return_flag"].isin([0, 1])]
+fact_shipments = fact_shipments[fact_shipments["return_flag"].isin([0, 1])]
+print(f"    Removed: {len(invalid)} invalid return flags")
 
-print("[9] Validating satisfaction scores (1-5, 0 for unresolved)...")
-invalid_sat = fact_requests[
-    ~fact_requests["satisfaction_score"].isin([0,1,2,3,4,5])]
-fact_requests.loc[
-    ~fact_requests["satisfaction_score"].isin([0,1,2,3,4,5]),
-    "satisfaction_score"] = 0
-print(f"    Fixed: {len(invalid_sat)} invalid satisfaction scores")
+print("[9] Validating delivery status values...")
+valid_statuses = ["Delivered", "In Transit", "Delayed", "Failed"]
+fact_shipments.loc[
+    ~fact_shipments["delivery_status"].isin(valid_statuses),
+    "delivery_status"] = "Unknown"
 
-# === Clean dim_citizens
-print("[10] Standardising province and city names...")
-dim_citizens["province"] = dim_citizens["province"].str.strip().str.title()
-dim_citizens["city"]     = dim_citizens["city"].str.strip().str.title()
+print("[10] Validating order status values...")
+valid_order = ["Completed", "Processing", "Cancelled", "Returned"]
+fact_shipments.loc[
+    ~fact_shipments["order_status"].isin(valid_order),
+    "order_status"] = "Unknown"
 
-print("[11] Removing invalid ages...")
-before = len(dim_citizens)
-dim_citizens = dim_citizens[
-    (dim_citizens["age"] >= 18) & (dim_citizens["age"] <= 100)]
-print(f"    Removed: {before - len(dim_citizens)} invalid ages")
+print("[11] Capping outlier shipping costs (above 99th percentile)...")
+cap = fact_shipments["shipping_cost"].quantile(0.99)
+outliers = (fact_shipments["shipping_cost"] > cap).sum()
+fact_shipments["shipping_cost"] = fact_shipments["shipping_cost"].clip(upper=cap)
+print(f"    Capped: {outliers} outlier shipping costs at {cap:.2f}")
 
-# === Clean dim_municipalities
-print("[12] Standardising municipality names...")
-dim_municipalities["municipality_name"] = \
-    dim_municipalities["municipality_name"].str.strip().str.title()
-dim_municipalities["province"] = \
-    dim_municipalities["province"].str.strip().str.title()
+print("[12] Validating transit days are positive...")
+fact_shipments.loc[fact_shipments["days_in_transit"] <= 0, "days_in_transit"] = np.nan
+print(f"    Fixed: non-positive transit days set to NULL")
+
+# === Clean dim_warehouses
+print("[13] Standardising country names...")
+dim_warehouses["country"] = dim_warehouses["country"].str.strip().str.title()
+
+print("[14] Validating latitude and longitude ranges...")
+invalid_lat = dim_warehouses[
+    (dim_warehouses["latitude"] < -90) | (dim_warehouses["latitude"] > 90)]
+invalid_lon = dim_warehouses[
+    (dim_warehouses["longitude"] < -180) | (dim_warehouses["longitude"] > 180)]
+print(f"    Invalid latitudes : {len(invalid_lat)}")
+print(f"    Invalid longitudes: {len(invalid_lon)}")
 
 # === Validate FK integrity
-print("\n[13] Validating foreign key integrity...")
-orphan_cit  = fact_requests[~fact_requests["citizen_id"].isin(dim_citizens["citizen_id"])]
-orphan_dep  = fact_requests[~fact_requests["department_id"].isin(dim_departments["department_id"])]
-orphan_mun  = fact_requests[~fact_requests["municipality_id"].isin(dim_municipalities["municipality_id"])]
-orphan_req  = fact_requests[~fact_requests["request_type_id"].isin(dim_request_types["request_type_id"])]
-print(f"    Orphan citizen_ids       : {len(orphan_cit)}")
-print(f"    Orphan department_ids    : {len(orphan_dep)}")
-print(f"    Orphan municipality_ids  : {len(orphan_mun)}")
-print(f"    Orphan request_type_ids  : {len(orphan_req)}")
+print("\n[15] Validating foreign key integrity...")
+orphan_wh  = fact_shipments[~fact_shipments["warehouse_id"].isin(dim_warehouses["warehouse_id"])]
+orphan_sup = fact_shipments[~fact_shipments["supplier_id"].isin(dim_suppliers["supplier_id"])]
+orphan_car = fact_shipments[~fact_shipments["carrier_id"].isin(dim_carriers["carrier_id"])]
+print(f"    Orphan warehouse_ids : {len(orphan_wh)}")
+print(f"    Orphan supplier_ids  : {len(orphan_sup)}")
+print(f"    Orphan carrier_ids   : {len(orphan_car)}")
 
 # === Summary
 print("\n" + "=" * 60)
 print("CLEANING SUMMARY")
 print("=" * 60)
-print(f"fact_service_requests : {len(fact_requests):,} rows after cleaning")
-print(f"dim_citizens          : {len(dim_citizens):,} rows after cleaning")
-print(f"dim_departments       : {len(dim_departments):,} rows (no changes needed)")
-print(f"dim_municipalities    : {len(dim_municipalities):,} rows after cleaning")
-print(f"dim_request_types     : {len(dim_request_types):,} rows (no changes needed)")
-print(f"dim_dates             : {len(dim_dates):,} rows (no changes needed)")
+print(f"fact_shipments : {len(fact_shipments):,} rows after cleaning")
+print(f"dim_warehouses : {len(dim_warehouses):,} rows after cleaning")
+print(f"dim_suppliers  : {len(dim_suppliers):,} rows (no changes needed)")
+print(f"dim_products   : {len(dim_products):,} rows (no changes needed)")
+print(f"dim_carriers   : {len(dim_carriers):,} rows (no changes needed)")
+print(f"dim_dates      : {len(dim_dates):,} rows (no changes needed)")
 
 # === Export
-fact_requests.to_csv("cleaned_fact_service_requests.csv", index=False)
-dim_citizens.to_csv("cleaned_dim_citizens.csv", index=False)
-dim_departments.to_csv("cleaned_dim_departments.csv", index=False)
-dim_municipalities.to_csv("cleaned_dim_municipalities.csv", index=False)
-dim_request_types.to_csv("cleaned_dim_request_types.csv", index=False)
+fact_shipments.to_csv("cleaned_fact_shipments.csv", index=False)
+dim_warehouses.to_csv("cleaned_dim_warehouses.csv", index=False)
+dim_suppliers.to_csv("cleaned_dim_suppliers.csv", index=False)
+dim_products.to_csv("cleaned_dim_products.csv", index=False)
+dim_carriers.to_csv("cleaned_dim_carriers.csv", index=False)
 dim_dates.to_csv("cleaned_dim_dates.csv", index=False)
 print("\nAll cleaned files exported successfully.")
