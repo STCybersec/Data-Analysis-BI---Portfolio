@@ -47,8 +47,6 @@ Data-Analysis-BI---Portfolio/
 │   ├── Sales Intelligence Dashboard/
 │   │   ├── Python/
 │   │   │   └── sales_intelligence.py
-│   └── README.md
-│
 └── README.md
 ```
 
