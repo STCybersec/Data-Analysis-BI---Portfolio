@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 
 print("=" * 60)
-print("PROJECT 3 — Healthcare Operations Dashboard")
+print("PROJECT 3 - Healthcare Operations Dashboard")
 print("Data Cleaning Report")
 print("=" * 60)
 
