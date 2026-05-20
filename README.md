@@ -45,14 +45,8 @@ Data-Analysis-BI---Portfolio/
 │
 ├── Python-Data-Cleaning/
 │   ├── Sales Intelligence Dashboard/
-│   │   ├── Raw_Data/
-│   │   │   └── Raw_Sales_Dirty.csv
-│   │   ├── Cleaned_data/
-│   │   │   └── Raw_Sales_Cleaned.csv
-│   │   ├── Notebooks/
-│   │   │   └── Sales_Data_Cleaning.ipynb
-│   │   ├── Scripts/
-│   │   │   └── Clean_Sales_Data.py
+│   │   ├── Python/
+│   │   │   └── sales_intelligence.py
 │   │   └── README.md
 │   └── README.md
 │
